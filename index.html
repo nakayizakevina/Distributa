@@ -1,288 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Distributa</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <link href="./output.css" rel="stylesheet">
-</head>
-<body> 
-  <!-- openning Div -->
-  <div class="container min-h-screen">
-    <!-- start of nav bar  part one-->
-     <nav class="flex justify-between py-5 ">
-        <a class="underline decoration-black text-blue-600 px-6 sm: p-2 mt-1 " href="#">Distributa</a> 
-        <div>
-          <a href="#" class="pl-96 flex-1 text-center pr-6">Login</a>
-          <a class="text-blue-800 bg-slate-50 p-1 md:justify-end" href="#">Start Now, It's Free</a>
-        </div>
-         </nav>
-         <!-- end of nav bar part one-->
-         <!-- part two starts from effortlessly track your  -->
-     <div class="grid grid-cols-2 mt-20 px-6 md:justify-evenly">
-         <div class="space-y-4">
-            <p class="text-3xl  font-sans">Effortlessly Track Your <br>
-                Expenses & Generate <br>
-                Professional Invoices
-            </p>
-            <p class="pt-2">
-             Simplify the process, making it easy for you to track your <br> 
-             expenses and generate professional invoices in minutes.
-            </p> 
-               <button class="py-4  px-4 mt-4 bg-blue-700 text-white text-justify min-w-20 min-h-15 ">Start Now, It's Free</button> 
-         </div>
-         <div>
-            <img class=" " src="img/Colunm.png.png" alt="invoices ">    
-         </div>
-       
-        </div>
-        <!-- part two ends with the image -->
-        <!--   part three starts from Generate shareable invoices-->
-      <div class="my-20 mx-20 ml-2 px-6">
-        <p class="text-3xl  font-sans">Generate Shareable <br>
-            Invoices In 3 Simple <br>
-            Steps
-       </p>
-        <div class="grid grid-cols-3 mt-6 space-x-2">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Distributa</title>
+		<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+		<link href="./output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!-- openning Div -->
+		<main class="container mx-auto">
+			<!-- start of nav bar  part one-->
+			<header class="flex justify-between">
+				<div>
+					<a
+						class="underline decoration-black text-blue text-lg font-bold py-3"
+						href="#"
+						>Distributa</a
+					>
+				</div>
+				<nav>
+					<a href="#" class="mr-6 p-3">Login</a>
+					<a class="text-blue font-semibold bg-slate-100 p-4" href="#"
+						>Start Now, It's Free</a
+					>
+				</nav>
+			</header>
+			<!-- end of nav bar part one-->
+			<!-- part two starts from effortlessly track your  -->
+			<section class="flex py-10">
+				<div class="w-1/2 flex flex-col justify-between">
+					<h1 class="text-5xl font-sans">
+						Effortlessly Track Your <br />
+						Expenses & Generate <br />
+						Professional Invoices
+					</h1>
+					<p class="py-4 text-2xl">
+						Simplify the process, making it easy for you to track
+						your <br />
+						expenses and generate professional invoices in minutes.
+					</p>
+					<button
+						class="py-4 px-14 mt-4 bg-blue text-white text-center w-fit"
+					>
+						Start Now, It's Free
+					</button>
+				</div>
+				<div class="w-1/2 flex flex-end">
+					<img
+						class="w-full h-auto"
+						src="img/Colunm.png.png"
+						alt="invoices "
+					/>
+				</div>
+			</section>
+			<!-- part two ends with the image -->
+			<!--   part three starts from Generate shareable invoices-->
+			<section class="py-10">
+				<article>
+					<h2 class="text-3xl font-sans">
+						Generate and Share <br />
+						Invoices In 3 Simple Steps
+					</h2>
+				</article>
+				<div class="grid grid-cols-3 gap-6 mt-6">
+					<article class="bg-slate-50 p-5 rounded">
+						<img src="img/Icon1.png.png" />
+						<h3 class="py-4 text-xl font-bold">Income details</h3>
+						<p>Add amount you want to share</p>
+					</article>
+					<article class="bg-slate-50 pt-4 pl-4 pb-5 rounded">
+						<img src="img/Icon2.png.png" />
+						<h3 class="py-4 text-xl font-bold">Beneficiaries</h3>
+						<p>
+							Enter the Name and Percentage of each person. <br />
+							Made a mistake? No worries you can edit or delete.
+						</p>
+					</article>
+					<article class="bg-slate-50 pt-4 pl-4 pb-5 rounded">
+						<img src="img/Icon3.png.png" />
+						<h3 class="py-4 text-xl font-bold">Breakdown</h3>
+						<p>
+							See the break down of the amount. Click Restart to
+							<br />
+							start a fresh.
+						</p>
+					</article>
+				</div>
+			</section>
+			<!-- part three ends with icon 3 -->
+			<!-- part four starts with use our expense -->
+			<section class="py-10">
+				<article>
+					<h2 class="text-3xl font-sans">
+						Use Our Expense <br />
+						Tracker To
+					</h2>
+				</article>
+				<div class="grid grid-cols-3 gap-6 mt-6">
+					<article class="bg-slate-50 p-6 rounded">
+						<img src="img/Icon4.png.png" />
+						<h3 class="py-4 text-xl font-bold">
+							Improve Your Financial
+						</h3>
+						<p>
+							Awareness <br />
+							Understand and take informed decissions about <br />
+							your spending habits.
+						</p>
+					</article>
 
-            <p class="bg-slate-50 pt-4 pl-4  pb-5 rounded ">
-                <img src="img/Icon1.png.png">
-                Intianate Pool <br>
-                Add amount you want to share
-            </p>
-            <p class="bg-slate-50 pt-4 pl-4 pb-5 rounded ">
-                <img src="img/Icon2.png.png"  >
-                Beneficiaries <br>
-                Enter the Name and Percentage of each person. <br>
-                Made a mistake? No worries you can edit or delete.
-            </p>
-            <p class="bg-slate-50 pt-4 pl-4 pb-5  rounded">
-                <img src="img/Icon3.png.png">
-                Breakdown <br>
-                See the break down of the amount. Click Restart to <br>
-                start a fresh.
-            </p>
+					<article class="bg-slate-50 p-6 rounded">
+						<img src="img/Icon5.png.png" />
+						<h3 class="py-4 text-xl font-bold">
+							Budgeting Assitance
+						</h3>
+						<p>
+							Create and stick to a budget by showing your<br />
+							spending and indetifying areas of overspending.
+						</p>
+					</article>
 
-        </div>
-     </div>
-     <!-- part three ends with icon 3 -->
-     <!-- part four starts with use our expense -->
-     <div class="my-20 mx-20 ml-2 px-6">
-        <p class="text-3xl  font-sans">Use Our Expense <br>
-             Tracker To
-        </p>
-        <div class=" grid grid-cols-3 space-x-2">
-            <p class="bg-slate-50  pt-4 pl-4  pb-5 rounded" >
-                <img src="img/Icon4.png.png">
-                Improve Your Financial <br>
-                Awareness <br>
-                Understand and take informed decissions about <br>
-                your spending habits.
-            </p>
-            <p class="bg-slate-50 pt-4  pl-4 pb-5 rounded" >
-                <img src="img/Icon5.png.png">
-                Budgeting Assitance <br>
-                Create and stick to a budget by showing  your<br>
-                spending and indetifying areas of overspending. 
-            </p>
-            <p class="bg-slate-50  pt-4 pl-4 pb-5 rounded" >
-                <img src="img/Icon6.png.png">
-                Saving Money <br>
-                Indetify and cut unnecessary expenses to save <br>
-                money.
-            </p>
+					<article class="bg-slate-50 p-6 rounded">
+						<img src="img/Icon6.png.png" />
+						<h3 class="py-4 text-xl font-bold">Saving Money</h3>
+						<p>
+							Indetify and cut unnecessary expenses to save <br />
+							money.
+						</p>
+					</article>
+				</div>
+			</section>
+			<!-- part four ends with icon 6 -->
+			<!-- part five starts with generate a shareable invoice -->
+			<section class="flex justify-between py-10">
+				<div class="w-8/12">
+					<article>
+						<h1 class="text-3xl font-sans">
+							Generate A Shareable <br />
+							Invoice
+						</h1>
+					</article>
+					<div class="flex my-6 gap-10">
+						<div class="w-2/5">
+							<label class="block">Payment Source/Purpose</label>
+							<input
+								class="w-full border border-solid border-black p-4 mt-2"
+								type="text"
+								placeholder="Payment Source/Purpose"
+							/>
+						</div>
+						<div class="w-2/5">
+							<label class="block">Amount</label>
+							<input
+								class="w-full border border-solid border-black p-4 mt-2"
+								type="text"
+								placeholder="Amount"
+							/>
+						</div>
+						<div class="w-1/5">
+							<br />
+							<button
+								class="w-full text-center bg-slate-50 py-4 mt-2 text-blue"
+							>
+								Enter
+							</button>
+						</div>
+					</div>
+					<div
+						class="flex justify-between bg-slate-100 p-4 items-center"
+					>
+						<p>Divide using</p>
+						<div class="flex-inline">
+							<span class="px-2">Manual Amount</span>
+							<input
+								type="checkbox"
+								class="mt-1 relative appearance-none inline-block h-[30px] w-[50px] cursor-pointer rounded-full bg-blue shadow-md transition-all after:content-[''] after:absolute after:top-1 after:-left-1 after:h-5 after:w-7 after:rounded-full after:bg-white after:shadow-sm after:transition-all checked:after:bg-slate-50 checked:after:translate-x-7 border border-solid border-spacing-1 border-black"
+							/>
+							<span class="px-2">Percentage</span>
+						</div>
+					</div>
+					<table class="w-full">
+						<thead>
+							<tr>
+								<td>Name</td>
+								<td>Percentage</td>
+								<td>Amount</td>
+								<td>Give/Take Cash</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>David</td>
+								<td>45%</td>
+								<td>Give Cash</td>
+								<td>Give Cash</td>
+								<td class="text-red-600 underline">Delete</td>
+								<td class="underline">Edit</td>
+							</tr>
+							<tr>
+								<td>David</td>
+								<td>45%</td>
+								<td>Give Cash</td>
+								<td>Give Cash</td>
+								<td class="text-red-600 underline">Delete</td>
+								<td class="underline">Edit</td>
+							</tr>
+							<tr>
+								<td>David</td>
+								<td>45%</td>
+								<td>Give Cash</td>
+								<td>Give Cash</td>
+								<td class="text-red-600 underline">Delete</td>
+								<td class="underline">Edit</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="grid grid-cols-5 mt-5">
+						<div>
+							<input
+								class="border border-gray-500 w-40"
+								type="text"
+								placeholder="Name"
+							/>
+						</div>
+						<div>
+							<input
+								class="border border-gray-500 ml-3 w-32"
+								type="text"
+								placeholder="%"
+							/>
+						</div>
+						<div>
+							<input
+								class="border border-gray-500 ml-3 w-32"
+								type="text"
+								placeholder="Amount"
+							/>
+						</div>
+						<select
+							name=""
+							id=""
+							class="border border-gray-500 ml-3 h-7 mr-2 text-sm text-gray-600 outline-none bg-white w-32"
+						>
+							<option value="">Select one</option>
+							<option value="">Take cash</option>
+							<option value="">Give cash</option>
+						</select>
+						<div>
+							<button class="bg-slate-50 w-36 text-blue-700 py-4">
+								Save
+							</button>
+						</div>
+					</div>
+					<button
+						class="text-blue-800 bg-slate-50 border-none w-36 py-4"
+					>
+						Add A Beneficiary
+					</button>
+				</div>
+				<!-- End of Generate to add beneficiary -->
 
-       </div>
-     </div>
-     <!-- part four ends with icon 6 -->
-     <!-- part five starts with generate a shareable invoice -->
-     <div class="mt-20 px-6 flex flex-row">
-       <div>
-         <p class="text-3xl  font-sans">Generate A Shareable <br>
-            Invoice
-          </p> 
-         <div class="grid grid-cols-3">
-            <div class="mx-2">
-                <p>Payment Source/Purpose</p>
-                <label className="Payment Source/Purpose "> 
-                    <input class=" border border-solid border-black pl-2 " type="text" className="h-15 w-96 " placeholder="Payment Source/Purpose">
-                </label>
-            </div>
-            <div class="">
-              <p>Amount</p>
-               <label className="Amount">
-                <input class="border border-solid border-black pl-2"  type="text" className="h-15 w-96" placeholder="Amount">
-               </label>
-            
-            </div>
-           <div>
-            <button class="bg-slate-50 h-15 w-36 py-5 text-blue-600 mb-3">Enter</button>
-           </div>
-        </div>
-        <div class="grid grid-cols-2 bg-slate-50 pl-3  w-11/12 py-4">
-            <div>
-                <p>Divide using</p>
-            </div>
-            <div class="grid grid-cols-3 px-10 justify-stretch">
-              <div>
-                <p class="">Manual Amount</p>
-              </div>
-               <!--start of toggle button-->
-                <div>
-                  <input type="checkbox" 
-                                class="relative 
-                                  appearance-none
-                                  inline-block 
-                                  h-[30px]
-                                  w-[54px] 
-                                  cursor-pointer 
-                                  rounded-full
-                                  bg-blue-500
-                                  shadow-md
-                                  transition-all
-                                  after:content-['']
-                                  after:absolute
-                                  after:top-[3px]
-                                  after:left-[3px]
-                                  after:h-6
-                                  after:w-7
-                                  after:rounded-full
-                                  after:bg-white
-                                  after:shadow-sm
-                                  after:transition-all
-                                  checked:after:bg-slate-50
-                                  checked:after:translate-x-6
-                                  border
-                                  border-spacing-1
-                                  border-black
-                                ">
-               </div>
-                 <!--end of toggle button-->
-                <p>Percentage</p>
-            </div>
+				<div class="w-3/12 bg-gray-100 p-5">
+					<h2 class="font-semibold py-2">Summary</h2>
+					<hr class="border-solid border-b-1 border-gray-400 my-5" />
+					<table class="w-full py-8">
+						<tr>
+							<td class="py-2">Payment Source/Purpose</td>
+							<td class="py-2 text-right">Pizza Party</td>
+						</tr>
+						<tr>
+							<td class="py-2">Shared Amount</td>
+							<td class="py-2 text-right">UG 5.000</td>
+						</tr>
+						<tr>
+							<td class="py-2">Number of beneficiaries</td>
+							<td class="py-2 text-right">5</td>
+						</tr>
+					</table>
+					<hr class="border-b-1 border-gray-400 my-5" />
+					<table class="w-full">
+						<tr>
+							<td class="py-2">Unshared Amount</td>
+							<td class="py-2 text-right">UGX 5.000/100%</td>
+						</tr>
+						<tr>
+							<td class="py-2">Shared Amount</td>
+							<td class="py-2 text-right">UGX 5.000/100%</td>
+						</tr>
+					</table>
+					<hr class="border-solid border-b-1 border-gray-400 my-5" />
+					<br class="py-10" />
+					<button class="bg-blue w-full h-10 text-white">
+						Share
+					</button>
+					<div class="flex gap-5 pt-5">
+						<button
+							class="md:w-1/2 py-2 text-red-700 border border-solid border-red-600 text-center"
+						>
+							Restart
+						</button>
+						<button
+							class="md:w-1/2 py-2 text-blue border border-solid border-blue text-center"
+						>
+							Save
+						</button>
+					</div>
+					<!-- end of summary to the red and blue buttons-->
+				</div>
+			</section>
+			<!-- start of footer -->
+			<footer>
+				<section class="flex py-14">
+					<div class="w-3/4 flex flex-col gap-7">
+						<a
+							class="text-blue underline decoration-slate-500 font-bold"
+						>
+							Distributa
+						</a>
+						<article>
+							<p>
+								Simplfying the process,making it easy for <br />
+								you to track your expenses and generate <br />
+								professional invoices in minutes
+							</p>
+						</article>
 
-        </div>
-        <div>
-            <table class="w-10/12">
-                <thead>
-                  <tr>
-                    <td>Name</td>
-                    <td>Percentage</td>
-                    <td>Amount</td>
-                    <td>Give/Take Cash</td>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>David</td>
-                    <td>45%</td>
-                    <td>Give Cash</td>
-                    <td>Give Cash</td>
-                    <td class="text-red-600 underline">Delete</td>
-                    <td class="underline">Edit</td>
-                  </tr>
-                  <tr>
-                    <td>David</td>
-                    <td>45%</td>
-                    <td>Give Cash</td>
-                    <td>Give Cash</td>
-                    <td class="text-red-600 underline">Delete</td>
-                    <td class="underline">Edit</td>
-                  </tr>
-                  <tr>
-                    <td>David</td>
-                    <td>45%</td>
-                    <td>Give Cash</td>
-                    <td>Give Cash</td>
-                    <td class="text-red-600 underline">Delete</td>
-                    <td class="underline">Edit</td>
-                  </tr>
-                </tbody>
-            </table>
-        </div>
-       <div class="grid grid-cols-5 mt-5   "> 
-          <div>
-            <input class="border border-gray-500  w-40"   type="text" placeholder="Name">
-          </div>
-         <div>
-            <input class="border border-gray-500 ml-3 w-32 "  type="text" placeholder="%">
-         </div>
-         <div>
-            <input class="border  border-gray-500 ml-3 w-32"  type="text" placeholder="Amount">
-         </div>
-         <select  name="" id="" class=" border border-gray-500 ml-3 h-7 mr-2 text-sm  text-gray-600 outline-none bg-white w-32">
-            <option value="">Select one</option>
-            <option value="">Take cash</option>
-            <option value="">Give cash</option>
-         </select>
-          <div>
-            <button class="bg-slate-50 w-36 text-blue-700 py-4">Save</button>
-          </div>
-         </div>
-         <button class="text-blue-800 bg-slate-50 border-none w-36 py-4">Add A Beneficiary</button>
-        </div>
-        <!-- End of Generate to add beneficiary -->
-        
-        <div class="ml-20 px-3 space-y-10">
-         <p class="">Summary</p>
-         <div class="">
-            Payment Source/Purpose <span class="px-6">Pizza Party</span><br>
-            Shared Amount <span class="px-16">UG 5.000</span><br>  
-             Number of beneficiaries <span class="px-16">5</span> 
-         </div>
-         <div>
-            Unshared Amount <span class="px-6" >UGX 5.000/100%</span><br>
-            Shared Amount <span class="px-10">UGX 5.000/100%</span> 
-         </div>
-           <button class="bg-blue-600 w-80 h-10 text-white">Share</button>
-           <div class="grid-cols-2 pt-5">
-              <button class="text-red-700 border border-solid border-red-600 w-36 " >Restart</button>
-              <button class="text-blue-700  border border-solid border-blue-600 w-36 ml-3">Save</button>
-           </div>
-           <!-- end of summary to the red and blue buttons-->
-        </div>
-       </div>
-       <!-- start of footer -->
-      <footer>
-       <div class=" grid grid-cols-2 ml-6">
-         <div class="space-y-5">
-           <p class="text-blue-800 underline decoration-slate-500">Distributa</p>
-           <p>
-             Simplfying the process,making it easy for <br>
-             you to track your expenses and generate <br>
-             professional invoices in minutes
-           </p>
-           
-           <div class="flex flex-inline mb-2">
-              <img  src="img/Facebook.png">
-              <img src="img/Instagram.png">
-              <img src="img/Twitter.png">
-              <img src="img/LinkedIn.png">
-            </div> 
-          </div>
-         <div class="ms-auto">
-          <p>Links</p>
-          <p>Sign Up</p>
-          <p>Login</p>
-          <p>FAQS</p>
-          <p>Support</p>
-         </div>
-      </div>
-      <div class="flex">
-        <div>
-            <p>2021 Relume.All rights reserved.</p>
-        </div>
-        <div>
-            <p class="text-right">Privacy Policy Terms of service </p>
-        </div>
-      </div>
-    </footer>
-    <!-- end of footer -->
-  </div> 
-    <!-- end of openning Div -->
-    <a href="index.html">Home</a>
-    <a href="myinvoice.html">My_Invoices</a>
-</body>
+						<figure class="flex flex-inline gap-5">
+							<img src="img/Facebook.png" />
+							<img src="img/Instagram.png" />
+							<img src="img/Twitter.png" />
+							<img src="img/LinkedIn.png" />
+						</figure>
+					</div>
+					<nav class="w-1/4 ms-auto flex flex-col items-end gap-2">
+						<h4 class="font-bold">Links</h4>
+						<a href="#">Sign Up</a>
+						<a href="#">Login</a>
+						<a href="#">FAQS</a>
+						<a href="#">Support</a>
+						<a href="myinvoice.html">Invoice</a>
+					</nav>
+				</section>
+				<section
+					class="flex justify-between pt-6 border-t-2 border-black"
+				>
+					<article>
+						<p>&copy; 2023. All rights reserved.</p>
+					</article>
+					<nav class="flex gap-12 text-right">
+						<a href="#">Privacy Policy</a>
+						<a href="#">Terms of service</a>
+					</nav>
+				</section>
+			</footer>
+			<!-- end of footer -->
+		</main>
+		<!-- end of openning Div -->
+	</body>
 </html>
