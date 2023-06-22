@@ -7,11 +7,11 @@
     <link href="./output.css" rel="stylesheet">
 </head>
 <body>
-    <div class="w-screen h-screen flex justify-center border border-black ">
-      <div class="w-full h-full mt-6 border flex justify-center border-red-500">
-         <div class=" w-64 h-5/6 border mt-10  mr-2  border-green-400  flex flex-col justify-between ">
-             <div class="h-3/5 flex flex-col justify-evenly">
-                 <p>Distributa</p>
+    <div class="w-screen h-screen flex justify-center">
+      <div class="w-full h-full mt-6 flex justify-center">
+         <div class=" w-64 h-5/6  mt-10  mr-2   flex flex-col  justify-between">
+             <div class="h-3/5  flex flex-col gap-2">
+                 <p class="text-xl font-bold text-blue-700">Distributa</p>
                  <div class="flex">
                      <img class="w-8 h-8" src="./img/file-text 1.png"alt="file">
                      <p>My Invoices</p>
@@ -25,131 +25,192 @@
                      <p>My Transaction</p> 
                  </div>
                </div>
-              <div class=>
+              <div>
                  <p>Log Out <br> Settings</p>
              </div>
 
             </div> 
-            <div class="w-9/12 h-5/6 mt-10 ml-2  border border-black ">
+            <div class="w-9/12 h-5/6 mt-10 ml-2 ">
                 <p class="text-xl font-bold">My Invoices</p>
                 <div class=" w-full flex justify-end">
                     <button class="bg-blue-600 text-white w-40 h-8">Create New Invoices</button>
                 </div>
+                <div class="h-[calc(90%)] w-full overflow overflow-y-scroll">
+                    <table class="w-full text-center">
+                        <thead>
+                          <tr>
+                             <th>Invoice#</th>
+                             <th>Billed To</th>
+                             <th>Status</th>
+                             <th>Amount Due</th>
+                          </tr>
+                        </thead>
+                        <tbody class=" overflow-y-auto">
+                            <tr>
+                              <td>Invoice#</td>
+                              <td>Billed To</td>
+                              <td class="flex pl-40 justify-evenly">  Status <img  class="w-fit h-fit px-8 py-2 flex" src="./img/edit.png" alt="edit"></td>
+                              <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex   pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex   pl-40 justify-evenly">Status  <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex   pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"> </td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"> </td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex   pl-40 justify-evenly">Status<img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td>
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr><tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                            <tr>
+                                <td>Invoice#</td>
+                                <td>Billed To</td>
+                                <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
+                                <td>Amount Due</td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
 
-                <table class="table-auto w-full h-full text-center  border border-green-500">
-                    <thead>
-                      <tr>
-                         <th>Invoice#</th>
-                         <th>Billed To</th>
-                         <th>Status</th>
-                         <th>Amount Due</th>
-                      </tr>
-                    </thead>
-                    <tbody class="border border-purple-800  h-1/4 overflow-y-hidden">
-                        <tr>
-                          <td>Invoice#</td>
-                          <td>Billed To</td>
-                          <td class="flex pl-40 justify-evenly">  Status <img  class="w-fit h-fit px-8 py-2 flex" src="./img/edit.png" alt="edit"></td>
-                          <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex   pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"> </td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex   pl-40 justify-evenly">Status  <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex   pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"> </td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status<img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"> </td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex   pl-40 justify-evenly">Status<img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status  <img  class="w-fit h-fit px-8 py-2" src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img  class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status <img class="w-fit h-fit px-8 py-2 " src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td>
-                        </tr>
-                        <tr>
-                            <td>Invoice#</td>
-                            <td>Billed To</td>
-                            <td class="flex  pl-40 justify-evenly">Status<img class="w-fit h-fit px-8 py-2"  src="./img/edit.png" alt="edit"></td>
-                            <td>Amount Due</td> 
-                        </tr>
-                    </tbody>
-                </table>
             </div>
             
         </div>
