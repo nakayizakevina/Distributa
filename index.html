@@ -135,7 +135,7 @@
 			<!-- part four ends with icon 6 -->
 			<!-- part five starts with generate a shareable invoice -->
 			<section class="flex justify-between py-10">
-				<div class="w-8/12 flex flex-col justify-evenly">
+				<div class="w-8/12 flex flex-col justify-evenly border border-red-500">
 					<article>
 						<h1 class="text-3xl font-sans">
 							Generate A Shareable <br />
@@ -143,18 +143,19 @@
 						</h1>
 					</article>
 					<div class="flex my-6 gap-10">
-						<div class="w-2/5">
+						<div class="w-64">
 							<label class="block">Payment Source/Purpose</label>
 							<input
-								class="w-full border border-solid border-black p-4 mt-2"
+								class="w-full h-6 border border-solid border-black p-4 mt-2"
 								type="text"
+								
 								placeholder="Payment Source/Purpose"
 							/>
 						</div>
-						<div class="w-2/5">
+						<div class="w-64">
 							<label class="block">Amount</label>
 							<input
-								class="w-full border border-solid border-black p-4 mt-2"
+								class="w-full h-6 border border-solid border-black p-4 mt-2"
 								type="text"
 								placeholder="Amount"
 							/>
@@ -162,7 +163,7 @@
 						<div class="w-1/5">
 							<br />
 							<button
-								class="w-full text-center bg-slate-50 py-4 mt-2 text-blue"
+								class="w-full h-7 text-center bg-slate-50 py-5 mt-2 text-blue"
 							>
 								Enter
 							</button>
@@ -176,20 +177,42 @@
 							<span class="px-2">Manual Amount</span>
 							<input
 								type="checkbox"
-								class="mt-1 relative appearance-none inline-block h-[30px] w-[50px] cursor-pointer rounded-full bg-blue shadow-md transition-all after:content-[''] after:absolute after:top-1 after:-left-1 after:h-5 after:w-7 after:rounded-full after:bg-white after:shadow-sm after:transition-all checked:after:bg-slate-50 checked:after:translate-x-7 border border-solid border-spacing-1 border-black"
+								class="mt-1 
+								       relative 
+									   appearance-none
+									   inline-block 
+									   h-[30px] w-[50px] 
+									   cursor-pointer
+									   rounded-full bg-blue
+								       shadow-md 
+								       transition-all 
+								       after:content-['']
+								       after:absolute 
+								       after:top-1 
+								       after:-left-1 
+								       after:h-5
+									   after:w-7
+								       after:rounded-full
+								      after:bg-white 
+								      after:shadow-sm 
+								      after:transition-all
+								     checked:after:bg-slate-50 
+								      checked:after:translate-x-6 
+								      border border-solid
+								      border-spacing-1 border-black"
 							/>
 							<span class="px-2">Percentage</span>
 						</div>
 					</div>
 					<table class="w-full">
 						<thead>
-							<tr>
+							<tr class="border-b-2">
 								<td>Name</td>
 								<td>Percentage</td>
 								<td>Amount</td>
 								<td>Give/Take Cash</td>
 							</tr>
-						</thead>
+                        </thead>
 						<tbody>
 							<tr>
 								<td>David</td>
@@ -198,6 +221,7 @@
 								<td>Give Cash</td>
 								<td class="text-red-600 underline">Delete</td>
 								<td class="underline">Edit</td>
+								
 							</tr>
 							<tr>
 								<td>David</td>
@@ -249,13 +273,13 @@
 							<option value="">Give cash</option>
 						</select>
 						<div>
-							<button class="bg-slate-50 w-36 text-blue-700 py-4">
+							<button class="bg-slate-50 w-36 text-blue py-4">
 								Save
 							</button>
 						</div>
 					</div>
 					<button
-						class="text-blue-800 bg-slate-50 border-none w-36 py-4"
+						class="text-blue-800 bg-slate-50 text-blue border-none w-36 py-4"
 					>
 						Add A Beneficiary
 					</button>
