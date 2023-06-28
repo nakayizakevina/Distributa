@@ -79,7 +79,7 @@
 						</p>
 					</article>
 					<article class="bg-slate-50 pt-4 pl-4 pb-5 rounded">
-						<img src="img/Icon3.png.png" />
+						<img src="img/Icon3.png.png"/>
 						<h3 class="py-4 text-xl font-bold">Breakdown</h3>
 						<p>
 							See the break down of the amount. Click Restart to
@@ -91,6 +91,7 @@
 			</section>
 			<!-- part three ends with icon 3 -->
 			<!-- part four starts with use our expense -->
+			
 			<section class="py-10">
 				<article>
 					<h2 class="text-3xl font-sans">
@@ -134,158 +135,159 @@
 			</section>
 			<!-- part four ends with icon 6 -->
 			<!-- part five starts with generate a shareable invoice -->
+			<article>
+				<h2 class="text-3xl font-sans mb-10">
+					Generate A Shareable <br />
+					Invoice
+				</h2>
+			</article>
 			<section class="flex justify-between py-10">
-				<div class="w-8/12 flex flex-col justify-evenly border border-red-500">
-					<article>
-						<h1 class="text-3xl font-sans">
-							Generate A Shareable <br />
-							Invoice
-						</h1>
-					</article>
-					<div class="flex my-6 gap-10">
-						<div class="w-64">
-							<label class="block">Payment Source/Purpose</label>
-							<input
-								class="w-full h-6 border border-solid border-black p-4 mt-2"
-								type="text"
-								
-								placeholder="Payment Source/Purpose"
-							/>
+				<div>
+					
+					<div class="w-full h-full  flex flex-col justify-between">
+						<div class="flex  gap-10">
+							<div class="w-64">
+								<label class="block">Payment Source/Purpose</label>
+								<input
+									class="w-full h-11 border border-gray-500 p-4 mt-2 placeholder-black"
+									type="text"
+									placeholder="Payment Source/Purpose"
+								/>
+							</div>
+							<div class="w-64">
+								<label class="block">Amount</label>
+								<input
+									class="w-full h-11 border border-gray-500 p-4 mt-2 placeholder-black"
+									type="text"
+									placeholder="Amount"
+								/>
+							</div>
+							<div class="w-1/5">
+								<br />
+								<button
+									class="w-full h-11 text-center bg-slate-50 p-5 mt-2 text-blue font-bold"
+								>
+									Enter
+								</button>
+							</div>
 						</div>
-						<div class="w-64">
-							<label class="block">Amount</label>
-							<input
-								class="w-full h-6 border border-solid border-black p-4 mt-2"
-								type="text"
-								placeholder="Amount"
-							/>
-						</div>
-						<div class="w-1/5">
-							<br />
-							<button
-								class="w-full h-7 text-center bg-slate-50 py-5 mt-2 text-blue"
-							>
-								Enter
-							</button>
-						</div>
-					</div>
-					<div
-						class="flex justify-between bg-slate-100 p-4 items-center"
-					>
-						<p>Divide using</p>
-						<div class="flex-inline">
-							<span class="px-2">Manual Amount</span>
-							<input
-								type="checkbox"
-								class="mt-1 
-								       relative 
-									   appearance-none
-									   inline-block 
-									   h-[30px] w-[50px] 
-									   cursor-pointer
-									   rounded-full bg-blue
-								       shadow-md 
-								       transition-all 
-								       after:content-['']
-								       after:absolute 
-								       after:top-1 
-								       after:-left-1 
-								       after:h-5
-									   after:w-7
-								       after:rounded-full
-								      after:bg-white 
-								      after:shadow-sm 
-								      after:transition-all
-								     checked:after:bg-slate-50 
-								      checked:after:translate-x-6 
-								      border border-solid
-								      border-spacing-1 border-black"
-							/>
-							<span class="px-2">Percentage</span>
-						</div>
-					</div>
-					<table class="w-full">
-						<thead>
-							<tr class="border-b-2">
-								<td>Name</td>
-								<td>Percentage</td>
-								<td>Amount</td>
-								<td>Give/Take Cash</td>
-							</tr>
-                        </thead>
-						<tbody>
-							<tr>
-								<td>David</td>
-								<td>45%</td>
-								<td>Give Cash</td>
-								<td>Give Cash</td>
-								<td class="text-red-600 underline">Delete</td>
-								<td class="underline">Edit</td>
-								
-							</tr>
-							<tr>
-								<td>David</td>
-								<td>45%</td>
-								<td>Give Cash</td>
-								<td>Give Cash</td>
-								<td class="text-red-600 underline">Delete</td>
-								<td class="underline">Edit</td>
-							</tr>
-							<tr>
-								<td>David</td>
-								<td>45%</td>
-								<td>Give Cash</td>
-								<td>Give Cash</td>
-								<td class="text-red-600 underline">Delete</td>
-								<td class="underline">Edit</td>
-							</tr>
-						</tbody>
-					</table>
-					<div class="grid grid-cols-5 mt-5">
-						<div>
-							<input
-								class="border border-gray-500 w-40"
-								type="text"
-								placeholder="Name"
-							/>
-						</div>
-						<div>
-							<input
-								class="border border-gray-500 ml-3 w-32"
-								type="text"
-								placeholder="%"
-							/>
-						</div>
-						<div>
-							<input
-								class="border border-gray-500 ml-3 w-32"
-								type="text"
-								placeholder="Amount"
-							/>
-						</div>
-						<select
-							name=""
-							id=""
-							class="border border-gray-500 ml-3 h-7 mr-2 text-sm text-gray-600 outline-none bg-white w-32 flex"
+						<div
+							class="flex justify-between bg-slate-100 p-4 items-center"
 						>
-							<option value="">Select one</option>
-							<option value="">Take cash</option>
-							<option value="">Give cash</option>
-						</select>
-						<div>
-							<button class="bg-slate-50 w-36 text-blue py-4">
-								Save
-							</button>
+							<p>Divide using</p>
+							<div class="flex-inline">
+								<span class="px-2 text-sm">Manual Amount</span>
+								<input
+									type="checkbox"
+									class="mt-1 
+										   relative 
+										   appearance-none
+										   inline-block 
+										   h-[30px] w-[50px] 
+										   cursor-pointer
+										   rounded-full bg-blue
+										   shadow-md 
+										   transition-all 
+										   after:content-['']
+										   after:absolute 
+										   after:top-1 
+										   after:-left-1 
+										   after:h-5
+										   after:w-7
+										   after:rounded-full
+										  after:bg-white 
+										  after:shadow-sm 
+										  after:transition-all
+										 checked:after:bg-slate-50 
+										  checked:after:translate-x-6 
+										  border border-solid
+										  border-spacing-1 border-black"
+								/>
+								<span class="px-2 text-sm">Percentage</span>
+							</div>
 						</div>
+						<table class="w-full text-sm">
+							<thead>
+								<tr class="border-b-2">
+									<td>Name</td>
+									<td>Percentage</td>
+									<td>Amount</td>
+									<td>Give/Take Cash</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>David</td>
+									<td>45%</td>
+									<td>Give Cash</td>
+									<td>Give Cash</td>
+									<td class="text-red-600 underline">Delete</td>
+									<td class="underline">Edit</td>
+									
+								</tr>
+								<tr>
+									<td>David</td>
+									<td>45%</td>
+									<td>Give Cash</td>
+									<td>Give Cash</td>
+									<td class="text-red-600 underline">Delete</td>
+									<td class="underline">Edit</td>
+								</tr>
+								<tr>
+									<td>David</td>
+									<td>45%</td>
+									<td>Give Cash</td>
+									<td>Give Cash</td>
+									<td class="text-red-600 underline">Delete</td>
+									<td class="underline">Edit</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="grid grid-cols-5 mt-5">
+							<div>
+								<input
+									class="border border-gray-500 w-40 placeholder-black"
+									type="text"
+									placeholder="Name"
+								/>
+							</div>
+							<div>
+								<input
+									class="border border-gray-500 ml-3 w-32 placeholder-black"
+									type="text"
+									placeholder="%"
+								/>
+							</div>
+							<div>
+								<input
+									class="border border-gray-500 ml-3 w-32 placeholder-black"
+									type="text"
+									placeholder="Amount"
+								/>
+							</div>
+							<select
+								name=""
+								id=""
+								class="border border-gray-500 ml-3 h-7 mr-2 text-sm  outline-none bg-white w-32 flex placeholder-black"
+							>
+								<option value="">Select one</option>
+								<option value="">Take cash</option>
+								<option value="">Give cash</option>
+							</select>
+							<div>
+								<button class="bg-slate-50 w-36 h-11 font-bold text-blue py-4">
+									Save
+								</button>
+							</div>
+						</div>
+						<button
+							class="text-blue-800 bg-slate-50 font-bold text-blue border-none w-36 py-4"
+						>
+							Add A Beneficiary
+						</button>
 					</div>
-					<button
-						class="text-blue-800 bg-slate-50 text-blue border-none w-36 py-4"
-					>
-						Add A Beneficiary
-					</button>
+					<!-- End of Generate to add beneficiary -->
 				</div>
-				<!-- End of Generate to add beneficiary -->
-
 				<div class="w-3/12 bg-gray-100 p-5">
 					<h2 class="font-semibold py-2">Summary</h2>
 					<hr class="border-solid border-b-1 border-gray-400 my-5" />
