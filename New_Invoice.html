@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New_Invoice</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="./output.css" rel="stylesheet" />
+    
   </head>
 
   <body>
@@ -16,35 +18,27 @@
           >
             Distributa
           </h2>
-          <div class="flex flex-col justify-between px-5 w-fit h-40 mt-6 ">
-              <div class="flex items-center gap-2 w-fit h-10  px-5 ">
-                <img
-                  class="w-fit h-fit pt-2"
-                  src="./img/file-text 1.png"
-                  alt="file"
-                />
-                <p class="pt-2 font-sans text-lg">My Invoices</p>
-              </div>
-              <div
-                class="flex items-center border border-gray bg-grey gap-2 px-5 w-fit h-10 rounded-md">
-                <img
-                  class="w-fit h-fit pt-2"
-                  src="./img/plus-square.png"
-                  alt="plus"
-                />
-                <p class="pt-2 font-sans text-lg">NewInvoice</p>
-              </div>
-              <div class="flex items-center justify-center gap-2 px-5 w-fit h-10">
-                <img 
-                  class="w-fit h-fit pt-2" 
-                  src="./img/book.png" 
-                  alt="book"
-                />
-                <p class="pt-2 font-sans text-lg">MyTransactions</p>
-              </div>
+          <div class=" mt-2">
+            
+            <div class="flex  align-middle w-56 h-11 pl-9">
+             <img class="w-6 h-6 mt-3" src="./img/expense.png.png" alt="expense">
+              <p class="ml-5 pt-2 font-sans text-lg">My Expenses</p>
+           </div>
            
-          </div>
-        </div>
+            <div class="flex  align-middle w-56 h-11 pl-9">
+              <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+              <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
+           </div>
+           <div class="flex align-middle w-56 h-11 pl-9 bg-grey border border-gray rounded-lg">
+              <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
+              <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+           </div>
+           <div class="flex align-middle w-56 h-11 pl-9">
+              <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
+              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
+           </div>
+         </div>
+       </div>
         <div>
           <p class="ml-3">
             Log Out <br />
@@ -57,7 +51,7 @@
         <h1 class="text-4xl font-semibold ml-10">New Invoice</h1>
         <div class="flex w-full py-5 px-10 flex-col">
           <section
-            class="flex justify-between w-full items-end relative h-fit mb-5">
+            class="flex justify-between w-full items-end relative h-fit gap-6 my-2">
             <div class="absolute bg-grey h-2/3 rounded -z-30 w-full"></div>
             <div class="flex justify-between px-5 w-full items-end pb-4">
               <div class="flex gap-x-5 items-end"> 
@@ -68,11 +62,9 @@
                   <input type="file" id="logo" name="logo" class="hidden" />
                   <span class="text-xs text-center"
                     >Add your <br/>
-                    logo</span
-
-
-                  >
-                </label>
+                    logo
+                  </span>
+                  </label>
                 <div class="flex flex-col ">
                   <label for="paper-size">Paper size</label>
                   <select
@@ -112,64 +104,64 @@
             </div>
           </section>
           <!--third section-->
-          <section class="flex gap-5">
-            <div class="w-4/5">
-              <div class="flex w-full bg-grey rounded-md p-5 gap-x-10">
-                <div class="h-48 w-full flex flex-col">
-                  <p class="text-2xl font-semibold">Billed From</p>
-                 <div class="flex justify-between w-full my-4 gap-x-5">
-                    <input
-                       class="border border-gray placeholder-black p-2 w-40"
-                       type="text"
-                       placeholder="Name"
-                     />
-                    <input
-                       class="border border-gray placeholder-black p-2  w-40"
-                       type="text"
-                       placeholder="Email"
-                   
+          <section class="flex gap-2">
+            <div class="w-4/5 flex flex-col gap-2">
+              
+              <div class="flex w-full bg-grey rounded-md p-5 gap-2">
+                <div class="h-48 w-full flex flex-col gap-3">
+                  <p class="text-3xl font-semibold">Billed From</p>
+                  <div class="flex flex-col justify-between gap-2 ">
+                    <div class="flex justify-between w-full gap-2">
+                      <input
+                        class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                        type="text"
+                        placeholder="Name"
                       />
-                 </div>
-                 <textarea
-                   class="border border-gray placeholder-black h-20 p-2 rounded-sm resize-none"
-                   type="text"
-                   placeholder="Address"
-                 >
-                 </textarea>
+                      <input
+                        class="border border-gray placeholder-black p-2  w-1/2 text-lg"
+                        type="text"
+                        placeholder="Email"
+                      
+                      />
+                    </div>
+                    <div class="bg-white border border-gray h-24 p-4 rounded-sm">
+                     <input class="text-lg placeholder-black" type="text" placeholder="Address">
+                    </div>
+                  </div>
+                 
                
                 </div>
-                <div class="h-48 w-full flex flex-col  ">
-                  <p class="text-2xl font-semibold">Billed From</p>
-                 <div class="flex justify-between w-full my-4 gap-x-5">
-                    <input
-                       class="border border-gray placeholder-black p-2 w-40"
-                       type="text"
-                       placeholder="Name"
-                     />
-                    <input
-                       class="border border-gray placeholder-black p-2  w-40"
-                       type="text"
-                       placeholder="Email"
-                   
+                <div class="h-48 w-full flex flex-col gap-3">
+                  <p class="text-3xl font-semibold">Billed To</p>
+                  <div class="flex flex-col justify-between gap-2 ">
+                    <div class="flex justify-between w-full gap-2">
+                      <input
+                        class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                        type="text"
+                        placeholder="Name"
                       />
-                 </div>
-                 <textarea
-                   class="border border-gray placeholder-black  h-20 p-4 rounded-sm resize-none"
-                   type="text"
-                   placeholder="Address"
-                 >
-                 </textarea>
-               
+                      <input
+                        class="border border-gray placeholder-black p-2  w-1/2 text-lg"
+                        type="text"
+                        placeholder="Email"
+                      
+                      />
+                    </div>
+                    <div class="bg-white border border-gray h-24 p-4 rounded-sm">
+                     <input class="text-lg placeholder-black" type="text" placeholder="Address">
+                    </div>
+                  </div>
                 </div>
                 
               </div>
-              <div class="bg-grey mt-5 p-5 rounded-md w-full">
+              <!--***-->
+              <div class="bg-grey p-5 rounded-md w-full">
                 <table class="w-full text-sm">
                   <thead>
                     <tr class="border-b-2">
-                      <td class="p-2">Title</td>
+                      <td class="pr-28 pl-2">Title</td>
                       <td class="p-2">Quantinty</td>
-                      <td class="p-2">Units</td>
+                      <td class="p-2 px-6">Units</td>
                       <td class="p-2">Price/Units</td>
                     </tr>
                   </thead>
@@ -218,32 +210,32 @@
                   </tbody>
                   
                 </table>
-                <div class="flex  justify-between">
-                  <input class="border border-gray placeholder-black"  type="text" placeholder="Title">
-                  <input class="border border-gray placeholder-black w-32" type="text" placeholder="Quantinty">
-                  <input class="border border-gray placeholder-black w-32" type="text" placeholder="Units">
-                  <input class="border border-gray placeholder-black w-32 " type="text" placeholder="Price">
-                 <button class="text-blue text-2xl font-semibold">Save</button>
+                <div class="flex  justify-between gap-2 ml-2">
+                  <input class="border border-gray placeholder-black w-60 pl-3"  type="text" placeholder="Title">
+                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Quantinty">
+                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Units">
+                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Price">
+                 <button class="text-blue text-xl font-semibold w-20 pr-5">Save</button>
                 </div>
-                <div class="mt-4">
-                  <button class="bg-blue text-white w-24 h-12">Add Item</button>
+                <div class="mt-4 ml-2">
+                  <button class="bg-blue text-white w-20 h-10 text-lg">Add Item</button>
                 </div>
                 
               
               </div>
-              <div class="bg-grey my-3 flex h-40 justify-evenly rounded-md">
-                <div class="flex flex-col my-4 ">
-                  <label>Notes</label>
-                  <input class="border border-gray  placeholder-black w-80 h-24 placeholder-top" type="text" placeholder="Notes">               
+              <div class="bg-grey flex h-40 w-full rounded-lg gap-2 items-center p-6">
+                <div class="flex flex-col w-1/2">
+                  <label class="text-xl">Notes</label>
+                  <input class="border border-gray placeholder-black h-24 placeholder-top pl-3 text-lg" type="text" placeholder="Notes">               
                 </div>
-                <div class="flex flex-col my-4">
-                  <label>Terms & Conditions</label>
-                  <input class="border border-gray placeholder-black w-80 h-24" type="text" placeholder="Terms & Conditions">
+                <div class="flex flex-col w-1/2">
+                  <label class="text-xl">Terms & Conditions</label>
+                  <input class="border border-gray placeholder-black h-24 pl-3 text-lg" type="text" placeholder="Terms & Conditions">
                 </div>
               </div> 
             
             </div>
-            <div class="gap-3 flex flex-col  ml-4 w-1/5 ">
+            <div class="gap-2 flex flex-col w-1/5">
               <div class="flex flex-col p-4 bg-grey rounded-md h-96 justify-evenly"> 
                   <div class="flex flex-col">
                     <label class="font-semibold">Title</label>
