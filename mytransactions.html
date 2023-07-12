@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My_transactions</title>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main class="flex w-screen flex-col gap-4 md:flex md:flex-row">
+      <!--sidebar-->
+      <div
+        class="w-full flex justify-between px-4 md:flex md:flex-col md:h-screen md:w-64"
+      >
+        <p
+          class="text-3xl font-bold font-serif text-blue underline decoration-black"
+        >
+          Distributa
+        </p>
+        <img class="md:hidden" src="./img/Icon.png" alt="icon" />
+        <div class="flex-col justify-between hidden md:flex md:flex-col h-full">
+          <div class="mt-2">
+            <div class="flex align-middle w-56 h-11 pl-9">
+              <img
+                class="w-fit h-fit pt-2"
+                src="./img/file-text 1.png"
+                alt="file"
+              />
+              <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
+            </div>
+            <div class="flex align-middle w-56 h-11 pl-9">
+              <img
+                class="w-fit h-fit pt-2"
+                src="./img/plus-square.png"
+                alt="plus"
+              />
+              <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+            </div>
+            <div
+              class="flex bg-grey rounded-lg border border-gray align-middle w-56 h-11 pl-9"
+            >
+              <img class="w-fit h-fit pt-2" src="./img/book.png" alt="book" />
+              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p>
+            </div>
+          </div>
+          <div class="ml-4">
+            <p>
+              Log Out <br />
+              Settings
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!--end of sidebar-->
+      <section class="h-screen flex flex-col px-4 gap-3 md:w-full">
+        <p class="text-4xl font-semibold">My Transactions</p>
+
+        <div class="flex flex-col md:flex-row-reverse gap-3 md:w-full">
+          <div class="h-64 flex flex-col gap-3 md:w-fit">
+            <div class="flex gap-2">
+              <div
+                class="w-1/2 bg-grey rounded-lg h-32 flex flex-col justify-center px-4"
+              >
+                <p class="font-semibold text-3xl">5,000 ugx</p>
+                <p class="text-sm">Income this month</p>
+              </div>
+              <div
+                class="w-1/2 bg-grey rounded-lg h-32 flex flex-col justify-center px-4"
+              >
+                <p class="font-semibold text-3xl">5,000 ugx</p>
+                <p class="text-sm">Expenses this month</p>
+              </div>
+            </div>
+            <button class="font-semibold text-lg bg-grey text-blue w-full h-12">
+              Export PDF Report
+            </button>
+            <button class="text-lg text-white bg-blue w-full h-12">
+              Add New
+            </button>
+          </div>
+          <div class="flex flex-col gap-3 md:flex-grow max-h-screen">
+            <div
+              class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
+            >
+              <div class="flex justify-between">
+                <p>March16</p>
+                <p>+1250</p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Rent Income</p>
+                <p>+500 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Mobile Topup</p>
+                <p>+700 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Client Payment</p>
+                <p>+1450 <span class="underline pl-10">See Details</span></p>
+              </div>
+            </div>
+            <div
+              class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
+            >
+              <div class="flex justify-between">
+                <p>March16</p>
+                <p>+1250</p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Rent Income</p>
+                <p>+500 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Mobile Topup</p>
+                <p>+700 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Client Payment</p>
+                <p>+1450 <span class="underline pl-10">See Details</span></p>
+              </div>
+            </div>
+            <div
+              class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
+            >
+              <div class="flex justify-between">
+                <p>March16</p>
+                <p>+1250</p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Rent Income</p>
+                <p>+500 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Mobile Topup</p>
+                <p>+700 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Client Payment</p>
+                <p>+1450 <span class="underline pl-10">See Details</span></p>
+              </div>
+            </div>
+            <div
+              class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
+            >
+              <div class="flex justify-between">
+                <p>March16</p>
+                <p>+1250</p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Rent Income</p>
+                <p>+500 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Mobile Topup</p>
+                <p>+700 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Client Payment</p>
+                <p>+1450 <span class="underline pl-10">See Details</span></p>
+              </div>
+            </div>
+            <div
+              class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
+            >
+              <div class="flex justify-between">
+                <p>March16</p>
+                <p>+1250</p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Rent Income</p>
+                <p>+500 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Mobile Topup</p>
+                <p>+700 <span class="underline pl-10">See Details</span></p>
+              </div>
+              <div class="flex justify-between border-b border-b-gray pt-5">
+                <p>Client Payment</p>
+                <p>+1450 <span class="underline pl-10">See Details</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
