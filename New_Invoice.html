@@ -20,20 +20,20 @@
           </h2>
           <div class=" mt-2">
             
-            <div class="flex  align-middle w-56 h-11 pl-9">
+            <div class="flex  align-middle w-56 h-11 pl-9 cursor-pointer">
              <img class="w-6 h-6 mt-3" src="./img/expense.png.png" alt="expense">
               <p class="ml-5 pt-2 font-sans text-lg">My Expenses</p>
            </div>
            
-            <div class="flex  align-middle w-56 h-11 pl-9">
+            <div class="flex  align-middle w-56 h-11 pl-9 cursor-pointer">
               <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
               <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
            </div>
-           <div class="flex align-middle w-56 h-11 pl-9 bg-grey border border-gray rounded-lg">
+           <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer bg-grey border border-gray rounded-lg">
               <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
               <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
            </div>
-           <div class="flex align-middle w-56 h-11 pl-9">
+           <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
               <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
               <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
            </div>
@@ -124,9 +124,8 @@
                       
                       />
                     </div>
-                    <div class="bg-white border border-gray h-24 p-4 rounded-sm">
-                     <input class="text-lg placeholder-black" type="text" placeholder="Address">
-                    </div>
+                    <textarea class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg p-2" placeholder="Address"></textarea>
+
                   </div>
                  
                
@@ -147,9 +146,7 @@
                       
                       />
                     </div>
-                    <div class="bg-white border border-gray h-24 p-4 rounded-sm">
-                     <input class="text-lg placeholder-black" type="text" placeholder="Address">
-                    </div>
+                    <textarea class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg p-2" placeholder="Address"></textarea>
                   </div>
                 </div>
                 
@@ -159,10 +156,12 @@
                 <table class="w-full text-sm">
                   <thead>
                     <tr class="border-b-2">
-                      <td class="pr-28 pl-2">Title</td>
-                      <td class="p-2">Quantinty</td>
-                      <td class="p-2 px-6">Units</td>
-                      <td class="p-2">Price/Units</td>
+                      <th class="pl-2 text-start">Title</th>
+                      <th class="p-2 text-start">Quantity</th>
+                      <th class="p-2 text-start">Units</th>
+                      <th class="p-2 text-start">Price/Units</th>
+                      <th class=""></th>
+                      <th class=""></th>
                     </tr>
                   </thead>
                   <tbody>
@@ -171,54 +170,72 @@
                       <td class="p-2">5</td>
                       <td class="p-2">LBs</td>
                       <td class="p-2">$500</td>
-                      <td class="text-red-600 underline p-2">Delete</td>
-                      <td class="underline p-2">Edit</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
                     </tr>
                     <tr>
                       <td class="p-2">Macbooks</td>
                       <td class="p-2">5</td>
                       <td class="p-2">LBs</td>
                       <td class="p-2">$500</td>
-                      <td class="text-red-600 underline p-2">Delete</td>
-                      <td class="underline p-2">Edit</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
                     </tr>
                     <tr>
                       <td class="p-2">Macbooks</td>
                       <td class="p-2">5</td>
                       <td class="p-2">LBs</td>
                       <td class="p-2">$500</td>
-                      <td class="text-red-600 underline p-2">Delete</td>
-                      <td class="underline p-2">Edit</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
                     </tr>
                     <tr>
                       <td class="p-2">Macbooks</td>
                       <td class="p-2">5</td>
                       <td class="p-2">LBs</td>
                       <td class="p-2">$500</td>
-                      <td class="text-red-600 underline p-2">Delete</td>
-                      <td class="underline p-2">Edit</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
                     </tr>
                     <tr>
                       <td class="p-2">Macbooks</td>
                       <td class="p-2">5</td>
                       <td class="p-2">LBs</td>
                       <td class="p-2">$500</td>
-                      <td class="text-red-600 underline p-2">Delete</td>
-                      <td class="underline p-2">Edit</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
                     </tr>
+                   
                     
                   </tbody>
+                  <tfoot> 
+                    <tr>
+                    <td class="px-2">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-96"  type="text" placeholder="Title">
+                    </td>
+                    <td class="px-2">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Quantity">
+                    </td>
+                    <td class="px-2">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Units">
+                    </td>
+                    <td class="px-2">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Price">
+                    </td>
+                    <td colspan="2" class="text-center">
+                      <button class="text-blue text-lg font-semibold">Save</button>
+
+                    </td>
+                    
+                  </tr>
+
+
+                  </tfoot>
                   
                 </table>
-                <div class="flex  justify-between gap-2 ml-2">
-                  <input class="border border-gray placeholder-black w-60 pl-3"  type="text" placeholder="Title">
-                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Quantinty">
-                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Units">
-                  <input class="border border-gray placeholder-black w-36 pl-3" type="text" placeholder="Price">
-                 <button class="text-blue text-xl font-semibold w-20 pr-5">Save</button>
-                </div>
+                
                 <div class="mt-4 ml-2">
-                  <button class="bg-blue text-white w-20 h-10 text-lg">Add Item</button>
+                  <button class="bg-blue text-white w-24 h-10 text-lg flex justify-center items-center">Add Item</button>
                 </div>
                 
               
