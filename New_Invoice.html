@@ -4,41 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>New_Invoice</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
     <link href="./output.css" rel="stylesheet" />
-    
   </head>
 
   <body>
-    <div class="w-screen  flex gap-x-6">
-      <div class="flex flex-col justify-between mt-6">
-        <div class="flex flex-col w-full">
-          <h2
-            class="text-2xl font-semibold text-blue font-serif ml-3 "
-          >
+    <div class="w-screen flex  border border-green-600 ">
+      <!-- sidebar -->
+      <div class="flex flex-col justify-between">
+        <div class="flex flex-col w-full ml-5">
+          <h2 class="text-2xl font-semibold text-blue font-serif ml-3">
             Distributa
           </h2>
-          <div class=" mt-2">
-            
-            <div class="flex  align-middle w-56 h-11 pl-9 cursor-pointer">
-             <img class="w-6 h-6 mt-3" src="./img/expense.png.png" alt="expense">
+          <div class="flex flex-col gap-4">
+            <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+              <img
+                class="w-6 h-6 mt-3"
+                src="./img/expense.png.png"
+                alt="expense"
+              />
               <p class="ml-5 pt-2 font-sans text-lg">My Expenses</p>
-           </div>
-           
-            <div class="flex  align-middle w-56 h-11 pl-9 cursor-pointer">
-              <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+            </div>
+
+            <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+              <img
+                class="w-fit h-fit pt-2"
+                src="./img/file-text 1.png"
+                alt="file"
+              />
               <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
-           </div>
-           <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer bg-grey border border-gray rounded-lg">
-              <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
-              <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
-           </div>
-           <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
-              <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
-              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
-           </div>
-         </div>
-       </div>
+            </div>
+            <div
+              class="flex align-middle w-56 h-11 pl-9 cursor-pointer bg-grey border border-gray rounded-lg"
+            >
+              <img
+                class="w-fit h-fit pt-2"
+                src="./img/plus-square.png"
+                alt="plus"
+              />
+              <p class="ml-5 pt-2 font-sans text-lg ">New Invoice</p>
+            </div>
+            <div class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+              <img class="w-fit h-fit pt-2" src="./img/book.png" alt="book" />
+              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p>
+            </div>
+          </div>
+        </div>
         <div>
           <p class="ml-3">
             Log Out <br />
@@ -47,25 +61,27 @@
         </div>
       </div>
 
-      <section class="w-full mt-6">
-        <h1 class="text-4xl font-semibold ml-10">New Invoice</h1>
+      <!-- main container -->
+      <section class="w-full">
+        <h1 class="text-4xl font-semibold  pl-9">New Invoice</h1>
         <div class="flex w-full py-5 px-10 flex-col">
           <section
-            class="flex justify-between w-full items-end relative h-fit gap-6 my-2">
+            class="flex justify-between w-full items-end relative h-fit gap-6 mb-8"
+          >
             <div class="absolute bg-grey h-2/3 rounded -z-30 w-full"></div>
             <div class="flex justify-between px-5 w-full items-end pb-4">
-              <div class="flex gap-x-5 items-end"> 
+              <div class="flex gap-x-5 items-end">
                 <label
                   for="logo"
                   class="border border-gray h-24 w-24 flex justify-center items-center cursor-pointer bg-white"
                 >
                   <input type="file" id="logo" name="logo" class="hidden" />
                   <span class="text-xs text-center"
-                    >Add your <br/>
+                    >Add your <br />
                     logo
                   </span>
-                  </label>
-                <div class="flex flex-col ">
+                </label>
+                <div class="flex flex-col">
                   <label for="paper-size">Paper size</label>
                   <select
                     name="paper-size"
@@ -76,7 +92,7 @@
                   </select>
                 </div>
                 <div class="flex flex-col">
-                  <label for="orientation">orientation</label>
+                  <label for="orientation">Orientation</label>
                   <select
                     name="orientation"
                     id="orientation"
@@ -86,7 +102,7 @@
                   </select>
                 </div>
                 <div class="flex flex-col">
-                  <label for="currency">currency</label>
+                  <label for="currency">Currency</label>
                   <select
                     name="currency"
                     id="currency"
@@ -103,12 +119,13 @@
               </button>
             </div>
           </section>
-          <!--third section-->
-          <section class="flex gap-2">
-            <div class="w-4/5 flex flex-col gap-2">
+
+          <!-- Bottom section -->
+          <section class="flex justify-between gap-x-2">
+            <div class="w-4/5 flex flex-col gap-2 ">
               
               <div class="flex w-full bg-grey rounded-md p-5 gap-2">
-                <div class="h-48 w-full flex flex-col gap-3">
+                <div class=" w-full flex flex-col gap-3">
                   <p class="text-3xl font-semibold">Billed From</p>
                   <div class="flex flex-col justify-between gap-2 ">
                     <div class="flex justify-between w-full gap-2">
@@ -124,13 +141,10 @@
                       
                       />
                     </div>
-                    <textarea class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg p-2" placeholder="Address"></textarea>
-
+                    <textarea class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg placeholder:p-4 p-2" placeholder="Address"></textarea>
                   </div>
-                 
-               
                 </div>
-                <div class="h-48 w-full flex flex-col gap-3">
+                <div class="w-full flex flex-col gap-3">
                   <p class="text-3xl font-semibold">Billed To</p>
                   <div class="flex flex-col justify-between gap-2 ">
                     <div class="flex justify-between w-full gap-2">
@@ -151,10 +165,10 @@
                 </div>
                 
               </div>
-              <!--***-->
-              <div class="bg-grey p-5 rounded-md w-full">
-                <table class="w-full text-sm">
-                  <thead>
+              
+              <div class="bg-grey px-5 rounded-md w-full">
+                <table class="w-full text-sm py-2">
+                 <thead>
                     <tr class="border-b-2">
                       <th class="pl-2 text-start">Title</th>
                       <th class="p-2 text-start">Quantity</th>
@@ -164,63 +178,66 @@
                       <th class=""></th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td class="p-2">Macbooks</td>
-                      <td class="p-2">5</td>
-                      <td class="p-2">LBs</td>
-                      <td class="p-2">$500</td>
-                      <td class="text-red-600 underline pr-10">Delete</td>
-                      <td class="underline pr-10">Edit</td>
-                    </tr>
-                    <tr>
-                      <td class="p-2">Macbooks</td>
-                      <td class="p-2">5</td>
-                      <td class="p-2">LBs</td>
-                      <td class="p-2">$500</td>
-                      <td class="text-red-600 underline pr-10">Delete</td>
-                      <td class="underline pr-10">Edit</td>
-                    </tr>
-                    <tr>
-                      <td class="p-2">Macbooks</td>
-                      <td class="p-2">5</td>
-                      <td class="p-2">LBs</td>
-                      <td class="p-2">$500</td>
-                      <td class="text-red-600 underline pr-10">Delete</td>
-                      <td class="underline pr-10">Edit</td>
-                    </tr>
-                    <tr>
-                      <td class="p-2">Macbooks</td>
-                      <td class="p-2">5</td>
-                      <td class="p-2">LBs</td>
-                      <td class="p-2">$500</td>
-                      <td class="text-red-600 underline pr-10">Delete</td>
-                      <td class="underline pr-10">Edit</td>
-                    </tr>
-                    <tr>
-                      <td class="p-2">Macbooks</td>
-                      <td class="p-2">5</td>
-                      <td class="p-2">LBs</td>
-                      <td class="p-2">$500</td>
-                      <td class="text-red-600 underline pr-10">Delete</td>
-                      <td class="underline pr-10">Edit</td>
-                    </tr>
                    
+                  <tbody class="w-full">
+                    <tr>
+                      <td class="p-2">Macbooks</td>
+                      <td class="p-2">5</td>
+                      <td class="p-2">LBs</td>
+                      <td class="p-2">$500</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
+                    </tr>
+                    
+                    <tr>
+                      <td class="p-2">Macbooks</td>
+                      <td class="p-2">5</td>
+                      <td class="p-2">LBs</td>
+                      <td class="p-2">$500</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
+                    </tr> 
+                    <tr>
+                      <td class="p-2">Macbooks</td>
+                      <td class="p-2">5</td>
+                      <td class="p-2">LBs</td>
+                      <td class="p-2">$500</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
+                    </tr>
+                    <tr>
+                      <td class="p-2">Macbooks</td>
+                      <td class="p-2">5</td>
+                      <td class="p-2">LBs</td>
+                      <td class="p-2">$500</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
+                    </tr>
+                    <tr>
+                      <td class="p-2">Macbooks</td>
+                      <td class="p-2">5</td>
+                      <td class="p-2">LBs</td>
+                      <td class="p-2">$500</td>
+                      <td class="text-red-600 underline pr-10">Delete</td>
+                      <td class="underline pr-10">Edit</td>
+                    </tr>
+                    
                     
                   </tbody>
-                  <tfoot> 
-                    <tr>
-                    <td class="px-2">
-                      <input class="border border-gray placeholder-black block px-3 py-2 w-96"  type="text" placeholder="Title">
+                   
+                  <tfoot class="w-full"> 
+                    <tr class="w-full">
+                    <td class="px-2 w-4/12">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-full"  type="text" placeholder="Title">
                     </td>
                     <td class="px-2">
-                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Quantity">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-full"  type="text" placeholder="Quantity">
                     </td>
                     <td class="px-2">
-                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Units">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-full"  type="text" placeholder="Units">
                     </td>
                     <td class="px-2">
-                      <input class="border border-gray placeholder-black block px-3 py-2 w-36"  type="text" placeholder="Price">
+                      <input class="border border-gray placeholder-black block px-3 py-2 w-full"  type="text" placeholder="Price">
                     </td>
                     <td colspan="2" class="text-center">
                       <button class="text-blue text-lg font-semibold">Save</button>
@@ -228,14 +245,12 @@
                     </td>
                     
                   </tr>
-
-
-                  </tfoot>
+                </tfoot>
                   
                 </table>
                 
-                <div class="mt-4 ml-2">
-                  <button class="bg-blue text-white w-24 h-10 text-lg flex justify-center items-center">Add Item</button>
+                <div class="">
+                  <button class="bg-blue text-white w-24 h-8 gap-2 text-lg flex justify-center items-center mt-2">Add Item</button>
                 </div>
                 
               
@@ -249,7 +264,7 @@
                   <label class="text-xl">Terms & Conditions</label>
                   <input class="border border-gray placeholder-black h-24 pl-3 text-lg" type="text" placeholder="Terms & Conditions">
                 </div>
-              </div> 
+              </div>  
             
             </div>
             <div class="gap-2 flex flex-col w-1/5">
@@ -297,11 +312,10 @@
                     $2500
                   </p>
                 </div>
-              </div>
-            </div>
-          </section>
-        </section> 
-        <!--END -->
+              </div>   
+            </div> 
+          </section> 
+        </div>
       </section>
     </div>
   </body>
