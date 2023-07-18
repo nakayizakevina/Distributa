@@ -12,11 +12,11 @@
     <main
       class="border border-red-600 h-full w-screen md:flex md:flex-row md:w-screen md:h-full md:gap-x-3"
     >
-      <div class="w-full md:w-64 md:h-full md:flex md:justify-between">
+      <div class="w-full h-10 md:w-64 md:h-screen md:flex md:justify-between md:p-4 border border-green-700">
         <div
-          class="flex justify-between w-full md:flex md:flex-col md:h-screen md:w-full"
+          class="flex justify-between w-full h-10 md:flex md:flex-col md:w-full md:h-full border border-red-600"
         >
-          <div class="w-full md:w-full">
+          <div class="w-full md:w-full border border-black">
             <div class="w-screen flex justify-between">
               <h2
                 class="underline decoration-black text-lg font-semibold text-blue font-serif p-2 md:text-3xl"
@@ -132,98 +132,101 @@
               </button>
             </div>
           </section>
-          <section class="flex flex-wrap gap-2 border border-red-600">
-            <!-- Billed From -->
+          <section class="flex flex-wrap gap-2">
+            <div class="gap-3 w-full flex flex-col md:flex md:flex-row md:gap-2">
+                
             <div
-              class="flex flex-col w-full bg-grey rounded-md p-5 gap-2 md:flex md:flex-row md:h-fit md:w-4/5"
-            >
-              <div class="w-full flex flex-col gap-3">
-                <p class="text-3xl font-semibold">Billed From</p>
-                <div class="flex flex-col justify-between gap-2">
-                  <div class="flex justify-between w-full gap-2">
-                    <input
-                      class="border border-gray placeholder-black p-2 w-1/2 text-lg"
-                      type="text"
-                      placeholder="Name"
-                    />
-                    <input
-                      class="border border-gray placeholder-black p-2 w-1/2 text-lg"
-                      type="text"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <textarea
-                    class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg placeholder:p-4 p-2"
-                    placeholder="Address"
-                  ></textarea>
+            class="flex flex-col w-full bg-grey rounded-md p-5 gap-2 md:flex md:flex-row md:h-fit md:w-4/5"
+          >
+            <div class="w-full flex flex-col gap-3">
+              <p class="text-3xl font-semibold">Billed From</p>
+              <div class="flex flex-col justify-between gap-2">
+                <div class="flex justify-between w-full gap-2">
+                  <input
+                    class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                    type="text"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                    type="text"
+                    placeholder="Email"
+                  />
                 </div>
-              </div>
-              <div class="w-full flex flex-col gap-3">
-                <p class="text-3xl font-semibold">Billed To</p>
-                <div class="flex flex-col justify-between gap-2">
-                  <div class="flex justify-between w-full gap-2">
-                    <input
-                      class="border border-gray placeholder-black p-2 w-1/2 text-lg"
-                      type="text"
-                      placeholder="Name"
-                    />
-                    <input
-                      class="border border-gray placeholder-black p-2 w-1/2 text-lg"
-                      type="text"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <textarea
-                    class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg p-2"
-                    placeholder="Address"
-                  ></textarea>
-                </div>
+                <textarea
+                  class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg placeholder:p-4 p-2"
+                  placeholder="Address"
+                ></textarea>
               </div>
             </div>
-
-            <!-- Invoice Details -->
-            <div
-              class="flex flex-col w-full p-4 bg-grey rounded-md h-96 justify-evenly md:w-1/5"
-            >
-              <div class="flex flex-col">
-                <label class="font-semibold">Title</label>
-                <input
-                  class="border border-gray placeholder-black p-2"
-                  type="text"
-                  placeholder="Title"
-                />
-              </div>
-              <div class="flex flex-col">
-                <label class="font-semibold">Invoice#</label>
-                <input
-                  class="border border-gray placeholder-black p-2 text-lg"
-                  type="text"
-                  placeholder="00001"
-                />
-              </div>
-              <div class="flex flex-col">
-                <label class="font-semibold">Issue Date</label>
-                <input
-                  class="border border-gray p-2 text-lg"
-                  type="date"
-                  placeholder="dd/mm/yy"
-                />
-              </div>
-              <div class="flex flex-col">
-                <label class="font-semibold">Due Date</label>
-                <input
-                  class="border border-gray p-2 text-lg"
-                  type="date"
-                  placeholder="dd/mm/yy"
-                />
+            <div class="w-full flex flex-col gap-3">
+              <p class="text-3xl font-semibold">Billed To</p>
+              <div class="flex flex-col justify-between gap-2">
+                <div class="flex justify-between w-full gap-2">
+                  <input
+                    class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                    type="text"
+                    placeholder="Name"
+                  />
+                  <input
+                    class="border border-gray placeholder-black p-2 w-1/2 text-lg"
+                    type="text"
+                    placeholder="Email"
+                  />
+                </div>
+                <textarea
+                  class="bg-white border border-gray h-24 rounded-sm w-full resize-none placeholder:text-black placeholder:text-lg p-2"
+                  placeholder="Address"
+                ></textarea>
               </div>
             </div>
+          </div>
 
-            <!-- Table -->
+          
+          <div
+            class="flex flex-col w-full p-4 bg-grey rounded-md h-96 justify-evenly md:w-1/5"
+          >
+            <div class="flex flex-col">
+              <label class="font-semibold">Title</label>
+              <input
+                class="border border-gray placeholder-black p-2"
+                type="text"
+                placeholder="Title"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold">Invoice#</label>
+              <input
+                class="border border-gray placeholder-black p-2 text-lg"
+                type="text"
+                placeholder="00001"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold">Issue Date</label>
+              <input
+                class="border border-gray p-2 text-lg"
+                type="date"
+                placeholder="dd/mm/yy"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label class="font-semibold">Due Date</label>
+              <input
+                class="border border-gray p-2 text-lg"
+                type="date"
+                placeholder="dd/mm/yy"
+              />
+            </div>
+          </div>
+            </div>
+            
 
-            <div class="w-3/4 md:-mt-32 md:w-4/5 flex flex-col gap-y-4">
+            
+
+            <div class="w-3/4 md:w-full flex flex-col gap-y-4 md:flex md:flex-row md:gap-2">
               <div
-                class="bg-grey px-5 rounded-md w-screen overflow-x-scroll md:overflow-hidden h-fit pb-4 md:w-full"
+                class="bg-grey px-5 rounded-md w-screen overflow-x-scroll md:overflow-hidden h-fit pb-4 md:w-4/5 md:-mt-32"
               >
                 <table class="w-full text-sm py-2">
                   <thead>
@@ -330,31 +333,9 @@
                   </button>
                 </div>
               </div>
-              <div
-                class="bg-grey flex flex-col w-full rounded-lg gap-2 items-center p-5 md:h-40 full md:flex md:flex-row md:w-full"
-              >
-                <div class="flex flex-col w-full md:w-1/2">
-                  <label class="text-xl">Notes</label>
-                  <input
-                    class="border border-gray placeholder-black h-24 placeholder-top pl-3 text-lg"
-                    type="text"
-                    placeholder="Notes"
-                  />
-                </div>
-                <div class="flex flex-col w-full md:w-1/2">
-                  <label class="text-xl">Terms & Conditions</label>
-                  <input
-                    class="border border-gray placeholder-black h-24 pl-3 text-lg"
-                    type="text"
-                    placeholder="Terms & Conditions"
-                  />
-                </div>
-              </div>
-            </div>
 
-            <!-- Notes -->
-            <div
-              class="flex flex-col p-4 gap-3 mt-2 bg-grey justify-evenly rounded-md h-80 w-full md:w-1/5"
+              <div
+              class="flex flex-col w-full p-4  rounded-md h-96 justify-evenly bg-grey md:w-1/5 md:hover:h-full "
             >
               <div class="border-b flex justify-between border-gray">
                 <p>Sub Total</p>
@@ -392,26 +373,30 @@
               </div>
             </div>
 
-            <!-- <div
-              class="bg-grey flex flex-col w-full rounded-lg gap-2 items-center p-5 md:h-40 full md:flex md:flex-row md:w-3/5"
-            >
-              <div class="flex flex-col w-full md:w-1/2">
-                <label class="text-xl">Notes</label>
-                <input
-                  class="border border-gray placeholder-black h-24 placeholder-top pl-3 text-lg"
-                  type="text"
-                  placeholder="Notes"
-                />
-              </div>
-              <div class="flex flex-col w-full md:w-1/2">
-                <label class="text-xl">Terms & Conditions</label>
-                <input
-                  class="border border-gray placeholder-black h-24 pl-3 text-lg"
-                  type="text"
-                  placeholder="Terms & Conditions"
-                />
-              </div>
-            </div> -->
+             
+            </div>
+            <div
+            class="bg-grey flex flex-col w-full rounded-sm gap-2 items-center p-5 md:h-40 full md:flex md:flex-row md:w-4/5 md:-mt-44  border border-red-600 "
+          >
+            <div class="flex flex-col w-full md:w-1/2">
+              <label class="text-xl">Notes</label>
+              <input
+                class="border border-gray placeholder-black h-24 placeholder-top pl-3 text-lg"
+                type="text"
+                placeholder="Notes"
+              />
+            </div>
+            <div class="flex flex-col w-full md:w-1/2">
+              <label class="text-xl">Terms & Conditions</label>
+              <input
+                class="border border-gray placeholder-black h-24 pl-3 text-lg"
+                type="text"
+                placeholder="Terms & Conditions"
+              />
+            </div>
+          </div>
+
+           
             <button
               class="text-white w-full bg-gray flex justify-center items-center px-2 font-semibold h-10 md:hidden"
             >
