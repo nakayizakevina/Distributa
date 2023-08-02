@@ -7,18 +7,18 @@
     <link href="./output.css" rel="stylesheet" />
 </head>
 <body>
-    <div class="container mx-auto flex my-5 w-full justify-center">
+    <div class="w-full flexl flex-col  lg:container lg:mx-auto lg:my-5 lg:flex lg:flex-row lg:justify-center">
        <!--First container-->
-        <section class="w-1/2">
-            <div class="px-5 py-5 flex flex-col justify-evenly w-full ">
-                <h1 class="text-3xl font-bold">Preview</h1>
+        <section class="w-full  lg:w-1/2">
+            <div class="px-5 py-5 flex flex-col items-center justify-evenly w-full">
+                <h1 class="text-3xl font-bold lg:ml-24 w-full">Preview</h1>
                 
-                <div class=" border border-black w-5/6" >
+                <div class="w-full border border-black lg:w-5/6" >
                     <div class="flex justify-between border border-black bg-grey w-full flex-row items-center px-8">
-                        <div class="w-32 h-32 flex flex-col justify-center">
+                        <div class="flex flex-col justify-center lg:w-32 lg:h-32 ">
                             <img src="./img/Frame.png" alt="">
                         </div>
-                        <div class="text-sm">
+                        <div class="text-xs  lg:text-sm">
                            <p>
                             David Wampamba <br>
                             House on #5 Street 9 <br>
@@ -27,22 +27,21 @@
                          </div>
                      </div>
                      <div class="py-4 px-4">
-                        <div class="w-96 flex gap-3 mt-3">
-                            <div class="w-1/2">
-                                <p class="font-semibold text-xl">Billed From</p>
-                                <p class="text-sm">David Wampamba</p>
-                                <p class="text-sm">House on #5 Street 9</p>
-                                <p class="text-sm">davidwampamba@gmail.com</p>
-                            </div>
-                            <div class="w-1/2">
-                                <p class="font-semibold text-xl">Billed From</p>
-                                <p class="text-sm">David Wampamba</p>
-                                <p class="text-sm">House on #5 Street 9</p>
-                                <p class="text-sm">davidwampamba@gmail.com</p>
-                
-                            </div>
+                        <div class="w-full gap-3 flex mt-3lg:w-96">
+                          <div class="lg:w-1/2">
+                            <p class="font-semibold text-lg  lg:text-xl">Title</p>
+                            <p class="text-xs  lg:text-sm"><span class="font-bold">Invoice#:</span>800</p>
+                            <p class=" text-xs lg:text-sm"><span class="font-bold">Date Issued:</span>01/82022</p>
+                            <p class=" text-xs lg:text-sm"><span class="font-bold">Due Date:</span>12/8/2022</p>
+                          </div>
+                          <div class=" lg:w-1/2">
+                            <p class="font-semibold text-lg lg:text-xl">Billed to</p>
+                            <p class="text-xs lg:text-sm">David Wampamba</p>
+                            <p class="text-xs lg:text-sm">House on #5 Street 9</p>
+                            <p class="  text-xs lg:text-sm">davidwampamba@gmail.com</p>
+                          </div>
                         </div>
-                        <table class="w-full text-sm mt-4">
+                        <table class="w-full mt-4 text-[10px] lg:text-sm">
                             <thead>
                               <tr class="border-b-2 border-t-2 font-bold">
                                 <td class="pr-24">Title</td>
@@ -90,21 +89,21 @@
                              </tr> 
                             </tbody>
                         </table>
-                        <div class="h-full flex gap-4">
+                        <div class="w-full mt-2 h-90  lg:h-full flex gap-4">
                             <div class="w-1/2 gap-4">
-                                <div class="font-sans">
-                                   <p class="font-bold text-2xl">Notes</p>
-                                   <p class="text-xs">
-                                     Proident incididunt elit cillum sint sint tempor.Dolore emet nisi qui <br>
-                                     Consequent aliquip eu.Non nulla sit eu labore incididunt.Velit laboris <br>
-                                     excepteur conquat esse aliqua excepteur nostrudeu in et irure. Est <br>
+                                <div class="">
+                                   <p class="font-semibold text-lg lg:font-bold  lg:text-2xl">Notes</p>
+                                   <p class="text-xs lg:text-xs">
+                                     Proident incididunt elit cillum sint sint tempor.Dolore emet nisi qui <br class="hidden lg:block">
+                                     Consequent aliquip eu.Non nulla sit eu labore incididunt.Velit laboris <br class="hidden lg:block">
+                                     excepteur conquat esse aliqua excepteur nostrudeu in et irure. Est <br class="hidden lg:block">
                                      excercitation non aliqua eiusmod.Aliqua est adispisicing deserunt sit.
             
                                    </p>
                                 </div>
-                                <div class="font-sans">
-                                    <p class="font-semibold text-2xl">Terms & Conditions</p>
-                                    <p class="text-xs">
+                                <div class="">
+                                    <p class="font-semibold text-lg lg:font-bold  lg:text-2xl">Terms & Conditions</p>
+                                    <p class="text-xs lg:text-xs">
                                       Proident incididunt elit cillum sint sint tempor.Dolore emet nisi qui <br>
                                       Consequent aliquip eu.Non nulla sit eu labore incididunt.Velit laboris <br>
                                       excepteur conquat esse aliqua excepteur nostrudeu in et irure. Est <br>
@@ -161,8 +160,8 @@
         </section>
        <!--End of first container-->
        <!--second container-->
-       <section class="w-1/3 flex flex-col justify-center">
-          <div class="h-80 flex flex-col justify-between">
+       <section class="w-full flex flex-col justify-center lg:w-1/3">
+          <div class="h-80 flex flex-col p-4 justify-between">
             <div class="flex justify-between">
               <p class="text-2xl">Add A Letterhead</p>
               <input
@@ -177,7 +176,7 @@
                             
               />
             </div>
-              <div class="flex justify-between w-full">
+              <div class="gap-2 flex justify-between w-full">
                 <div>
                   <P class="text-lg font-normal">Add your letterhead</P>
                   <label for="head" class="border border-gray bg-white flex py-4 pl-3   w-44 h-12">
