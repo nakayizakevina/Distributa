@@ -7,57 +7,41 @@
     <link href="./output.css" rel="stylesheet" />
   </head>
   <body>
-    <main class="flex w-screen flex-col gap-4 md:flex md:flex-row">
+    <main class="flex w-screen h-screen flex-col gap-4 md:flex md:flex-row  md:overflow-hidden overflow-y-scroll">
       <!--sidebar-->
-      <div
-        class="w-full flex justify-between px-4 md:flex md:flex-col md:h-screen md:w-64"
-      >
-        <p
-          class="text-3xl font-bold font-serif text-blue underline decoration-black"
-        >
-          Distributa
-        </p>
-        <img class="md:hidden" src="./img/Icon.png" alt="icon" />
-        <div class="flex-col justify-between hidden md:flex md:flex-col h-full">
-          <div class="mt-2">
-            <div class="flex align-middle w-56 h-11 pl-9">
-              <img
-                class="w-fit h-fit pt-2"
-                src="./img/file-text 1.png"
-                alt="file"
-              />
+      <div class="flex lg:w-64 lg:h-screen lg:flex lg:flex-col lg:mt-2  lg:mr-8 justify-between">
+        <div class="h-2/4 flex flex-col items-center gap-6">
+          <p class="text-4xl ml-2 font-bold font-serif text-blue">
+           Distributa
+          </p>
+          <div class="hidden lg:flex lg:flex-col lg:gap-4 gap-4 lg:w-full">
+            <a class="flex  bg-grey  rounded-lg border align-middle w-56 h-11 pl-9  " href="myinvoice.html">
+              <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
               <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
-            </div>
-            <div class="flex align-middle w-56 h-11 pl-9">
-              <img
-                class="w-fit h-fit pt-2"
-                src="./img/plus-square.png"
-                alt="plus"
-              />
-              <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
-            </div>
-            <div
-              class="flex bg-grey rounded-lg border border-gray align-middle w-56 h-11 pl-9"
-            >
-              <img class="w-fit h-fit pt-2" src="./img/book.png" alt="book" />
-              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p>
-            </div>
-          </div>
-          <div class="ml-4">
-            <p>
-              Log Out <br />
-              Settings
-            </p>
+            </a>
+            <a href="./New_Invoice.html" class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+             <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
+             <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+            </a>
+            <a  class="flex align-middle w-56 h-11 pl-9 cursor-pointer" href="mytransactions.html">
+              <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
+              <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
+            </a>
           </div>
         </div>
-      </div>
-
+        <div class="hidden lg:flex lg:p-4">
+          <p>Log Out <br> Settings</p>
+        </div>
+        <div class="p-2 lg:hidden">
+         <img src="./img/Icon.png" alt="Icon"> 
+        </div>
+      </div> 
       <!--end of sidebar-->
-      <section class="h-screen flex flex-col px-4 gap-3 md:w-full">
+      <section class="h-full flex flex-col px-4 gap-3 md:w-full">
         <p class="text-4xl font-semibold">My Transactions</p>
 
-        <div class="flex flex-col md:flex-row-reverse gap-3 md:w-full">
-          <div class="h-64 flex flex-col gap-3 md:w-fit">
+        <div class="flex flex-col md:flex-row-reverse gap-3 md:w-full lg:h-[90%]">
+          <div class="h-64 flex flex-col gap-3 md:w-fit h">
             <div class="flex gap-2">
               <div
                 class="w-1/2 bg-grey rounded-lg h-32 flex flex-col justify-center px-4"
@@ -79,7 +63,7 @@
               Add New
             </button>
           </div>
-          <div class="flex flex-col gap-3 md:flex-grow max-h-screen">
+          <div class="flex flex-col gap-3 md:flex-grow overflow-y-scroll h-full">
             <div
               class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4"
             >
@@ -183,51 +167,8 @@
           </div>
         </div>
       </section>
-      <div id="modal" class=" w-full h-96   flex-col absolute hidden justify-center border border-black bg-white">
-         <div class="flex justify-between p-4 bg-grey">
-             <p class="font-semibold text-lg">Transaction Details</p>
-             <img class="w-16 h-14" src="./img/x-circle.png" alt="x-circle">
-         </div>
-         <div class="flex-col p-4 justify-evenly">
-            <p class="text-lg">March 16</p>
-            <div class="border border-black flex justify-between">
-                <p class="text-lg font-bold">Rent Income</p>
-                <p class="text-lg">+500</p>
-            </div>
-            <p class="text-xs">
-                Proident incididunt elit cillum sint sint tempor.Dolore emet nisi qui <br>
-                Consequent aliquip eu.Non nulla sit eu labore incididunt.Velit laboris <br>
-                excepteur conquat esse aliqua excepteur nostrudeu in et irure. Est <br>
-                excercitation non aliqua eiusmod.Aliqua est adispisicing deserunt sit.
-
-              </p>
-            <div class="">
-                <div class="flex justify-between border-b border-b-gray">
-                    <p class="text-xl">Income/Expense</p>
-                    <p>placeholder</p>
-                </div>
-                <div class="flex justify-between border-b border-b-gray">
-                    <p class="text-xl">Category</p>
-                    <p>placeholder</p>
-                </div>
-                <div class="flex justify-between border-b border-b-gray">
-                    <p class="text-xl">Receipt#</p>
-                    <p>placeholder</p>
-                </div>
-                <div class="flex justify-between border-b border-b-gray">
-                    <p class="text-xl">Method</p>
-                    <p>placeholder</p>
-                </div>
-                <div class="flex justify-between border-b border-b-gray">
-                    <p class="text-xl">Payee</p>
-                    <p>placeholder</p>
-                </div>
-            </div>
-
-         </div>
-      </div>
       
-    </div>
+     
     </main>
 </body>
 </html>
