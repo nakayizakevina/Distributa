@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty-Invoice</title>
+    <link href="./output.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class=" w-screen h-screen flex flex-col lg:flex lg:justify-center lg:relative lg:flex-row">
+        <div class="flex lg:w-64 lg:h-screen lg:flex lg:flex-col lg:mt-2  lg:mr-8 justify-between">
+            <div class="h-2/4 flex flex-col items-center gap-6">
+                <p class="text-xl underline decoration-black ml-2 font-bold font-serif text-blue lg:text-4xl lg:no-underline ">
+                    Distributa
+
+                </p>
+                <div class="hidden lg:flex lg:flex-col lg:gap-4 gap-4 lg:w-full">
+                    <a class="flex  bg-grey  rounded-lg border align-middle w-56 h-11 pl-9  " href="myinvoice.html">
+                        <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+                        <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
+                    </a>
+                    
+                   <a href="./New_Invoice.html" class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+                        <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
+                        <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+
+                   </a>
+                   <a  class="flex align-middle w-56 h-11 pl-9 cursor-pointer" href="mytransactions.html">
+                      <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
+                        <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
+                   </a>
+                  
+                </div>
+                
+            </div>
+            <div class="hidden lg:flex lg:p-4">
+                 <p>Log Out <br> Settings</p>
+            </div>
+            <div class="p-2 lg:hidden">
+               <img src="./img/Icon.png" alt="Icon"> 
+            </div>
+
+        </div> 
+        <div class="lg:w-9/12 lg:h-auto lg:mt-2 lg:ml-2 lg:flex lg:flex-col lg:justify-end">
+            <div class="w-full h-32">
+                <p class="text-5xl font-bold mt-12">
+                    My Invoices
+                </p>
+                <a class="w-full flex justify-end p-5" href="New_Invoice.html">
+                    <button class="bg-blue text-white w-40 h-10 cursor-pointer">Create New Invoices</button>
+                </a>
+            </div>
+            <div class="w-full h-full flex flex-col justify-center items-center gap-4 lg:h-[calc(90%)]">
+                <a class="flex bg-grey rounded-full items-center justify-center w-16 h-16 " href="myinvoice.html">
+                    <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+                </a>
+                <p class="font-semibold text-lg">NO INVOICES</p>
+                <p class="text-lg">You haven't created any invoice yet</p>
+                <a class="w-full flex justify-center" href="New_Invoice.html">
+                    <button class=" w-48 h-12 bg-blue text-white font-semibold">Create New Invoices</button>
+                </a>
+
+            </div>
+
+        </div>
+            
+    </div>
+    <div id="modal" class=" w-96 h-96 m-10  flex-col absolute hidden justify-center bg-slate-50">
+        <div class=" flex flex-row justify-between py-4  bg-slate-100">
+            <p class="pl-3">Edit Status For Invoice #0001</p>
+            <div><img id="x-circle" class="pt-2 pr-3" src="./img/x-circle.png" alt="x-circle"></div>
+        </div>
+        <div class="ml-5 flex flex-col justify-center">
+            <div class="mt-5">Status</div>
+            <select  name="" id="" class=" w-80 h-10  my-5 text-sm pl-2 border border-gray-500  text-gray-600 outline-none bg-white">
+                <option value="">Select one</option>
+            </select>
+            <button class="bg-blue-600 w-80 h-10 text-white">Update</button>
+        </div>
+          
+    </div>
+
+    <!--Modal box-->
+    <!-- <div id="modal" class="w-screen h-screen   z-10  bg-black bg-opacity-25  justify-center"> -->
+
+    <!-- </div> -->
+ <!--End of modal box-->
+    <script>
+        var modal = document.getElementById("modal");
+        const trinker = document.getElementById("trinker"); 
+        trinker.addEventListener("click", ( event ) => {
+            console.log("here");
+            // console.log(modal)
+            // c
+            // console.log(modal.classList.remove("hidden"))
+            modal.classList.remove("hidden")
+            window.onclick = function(event) {
+           if (event.target == modal) {
+           modal.style.display = "block";
+          }
+        }
+        })
+
+         // this is what has to display
+    //    var img = document.getElementById("edit");
+       var div = document.getElementById("x-circle")[0];
+    //    img.onclick = function() {
+    //         modal.style.display = "block";
+    //         div.onclick = function() {
+    //           modal.style.display = "none";
+    //          }
+    //          console.log("here")
+    //    }
+
+ 
+    </script>
+    <!-- <a href="Editinvoicestatus.html">Edit_invoice.status</a> -->
+</body>
+
+</html>
