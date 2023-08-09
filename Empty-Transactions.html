@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empty-Transactions</title>
+    <link href="./output.css" rel="stylesheet"/>
+</head>
+<main class="flex w-screen h-screen flex-col gap-4 md:flex md:flex-row  md:overflow-hidden overflow-y-scroll">
+    <!--sidebar-->
+    <div class="flex lg:w-64 lg:h-screen lg:flex lg:flex-col lg:mt-2  lg:mr-8 justify-between">
+      <div class="h-2/4 flex flex-col items-center gap-6">
+        <p class="text-4xl ml-2 font-bold font-serif text-blue">
+         Distributa
+        </p>
+        <div class="hidden lg:flex lg:flex-col lg:gap-4 gap-4 lg:w-full">
+          <a class="flex  bg-grey  rounded-lg border align-middle w-56 h-11 pl-9  " href="myinvoice.html">
+            <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+            <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
+          </a>
+          <a href="./New_Invoice.html" class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+           <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
+           <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+          </a>
+          <a  class="flex align-middle w-56 h-11 pl-9 cursor-pointer" href="mytransactions.html">
+            <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
+            <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
+          </a>
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:p-4">
+        <p>Log Out <br> Settings</p>
+      </div>
+      <div class="p-2 lg:hidden">
+       <img src="./img/Icon.png" alt="Icon"> 
+      </div>
+    </div> 
+    <!--end of sidebar-->
+    <section class="h-full flex flex-col px-4 gap-3 md:w-full">
+      <p class="text-4xl font-semibold">My Transactions</p>
+
+      <div class="flex flex-col md:flex-row-reverse gap-3 md:w-full lg:h-[90%]">
+           <div class="h-64 flex flex-col gap-3 md:w-fit h">
+             <div class="flex gap-2">
+            <div
+              class="w-1/2 bg-grey rounded-lg h-32 flex flex-col justify-center px-4"
+            >
+              <p class="font-semibold text-3xl">N/A</p>
+              <p class="text-sm">Income this month</p>
+            </div>
+            <div
+              class="w-1/2 bg-grey rounded-lg h-32 flex flex-col justify-center px-4"
+            >
+              <p class="font-semibold text-3xl">N/A</p>
+              <p class="text-sm">Expenses this month</p>
+            </div>
+             </div>
+             <a href="New_Invoice.html">
+                <button class="font-semibold text-lg bg-grey text-blue w-full h-12 ">
+                    Export PDF Report
+                </button>
+             </a>
+             <a href="New_Invoice.html">
+                <button class="text-lg cursor-pointer text-white bg-blue w-full h-12">
+                    Add New
+               </button>
+             </a>
+             
+           </div>
+           <div class="flex flex-col h-64 gap-3 justify-center items-center lg:flex-grow lg:h-full lg:bg-grey lg:rounded-lg">
+              <a class="flex rounded-full items-center justify-center w-16 h-16 " href="myinvoice.html">
+                <img class="w-fit h-fit pt-2" src="./img/book.png"alt="file">
+             </a>
+             <p class="font-semibold text-lg">NO INVOICES</p>
+             <p class="text-lg">You haven't created any invoice yet</p>
+             <a class="w-full flex justify-center cursor-pointer" href="New_Invoice.html">
+                <button class=" w-48 h-12 bg-blue text-white font-semibold">Create New Invoices</button>
+             </a>
+            </div>
+        </div>
+    </section>
+</main>
+</html>
