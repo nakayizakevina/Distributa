@@ -2030,19 +2030,14 @@ video {
   border-color: rgb(22 163 74 / var(--tw-border-opacity));
 }
 
-.border-red-600 {
-  --tw-border-opacity: 1;
-  border-color: rgb(220 38 38 / var(--tw-border-opacity));
-}
-
 .border-purple-600 {
   --tw-border-opacity: 1;
   border-color: rgb(147 51 234 / var(--tw-border-opacity));
 }
 
-.border-violet-600 {
+.border-red-600 {
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity));
+  border-color: rgb(220 38 38 / var(--tw-border-opacity));
 }
 
 .border-b-gray {
@@ -2415,6 +2410,10 @@ video {
   vertical-align: super;
 }
 
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -2445,6 +2444,11 @@ video {
 
 .text-\[10px\] {
   font-size: 10px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .text-lg {
@@ -2549,6 +2553,11 @@ video {
 
 .text-\[\#336699\]\/\[\.35\] {
   color: rgb(51 102 153 / .35);
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-blue {
@@ -3395,6 +3404,14 @@ video {
     height: 8rem;
   }
 
+  .lg\:h-\[480px\] {
+    height: 480px;
+  }
+
+  .lg\:h-\[90\%\] {
+    height: 90%;
+  }
+
   .lg\:h-\[calc\(90\%\)\] {
     height: calc(90%);
   }
@@ -3409,14 +3426,6 @@ video {
 
   .lg\:h-screen {
     height: 100vh;
-  }
-
-  .lg\:h-\[80\%\] {
-    height: 80%;
-  }
-
-  .lg\:h-\[90\%\] {
-    height: 90%;
   }
 
   .lg\:w-1\/2 {
@@ -3455,6 +3464,14 @@ video {
     width: 75%;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
+  .lg\:w-\[448px\] {
+    width: 448px;
+  }
+
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
@@ -3466,6 +3483,10 @@ video {
 
   .lg\:w-screen {
     width: 100vw;
+  }
+
+  .lg\:flex-grow {
+    flex-grow: 1;
   }
 
   .lg\:flex-row {
@@ -3513,8 +3534,8 @@ video {
          column-gap: 0.75rem;
   }
 
-  .lg\:overflow-hidden {
-    overflow: hidden;
+  .lg\:rounded-lg {
+    border-radius: 0.5rem;
   }
 
   .lg\:bg-grey {
@@ -3544,6 +3565,10 @@ video {
     padding-left: 10rem;
   }
 
+  .lg\:pr-24 {
+    padding-right: 6rem;
+  }
+
   .lg\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -3557,6 +3582,11 @@ video {
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 
   .lg\:text-sm {
@@ -3576,6 +3606,10 @@ video {
 
   .lg\:font-bold {
     font-weight: 700;
+  }
+
+  .lg\:no-underline {
+    text-decoration-line: none;
   }
 }
 
