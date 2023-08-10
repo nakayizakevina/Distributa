@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Expenses/Income</title>
+    <link href="./output.css" rel="stylesheet"/>
+</head>
+<body>
+    <div class="w-full h-full lg:hidden">
+        <div class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4">
+            <div class="flex justify-between">
+              <p>March16</p>
+              <p>+1250</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Rent Income</p>
+              <p>+500</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Mobile Topup</p>
+              <p>+700</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Client Payment</p>
+              <p>+1450</p>
+            </div>
+        </div>
+        <div class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4">
+            <div class="flex justify-between">
+              <p>Feb 12</p>
+              <p>+1250</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Rent Income</p>
+              <p>+500</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Mobile Topup</p>
+              <p>+700</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Client Payment</p>
+              <p>+1450</p>
+            </div>
+        </div>
+        <div class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4">
+            <div class="flex justify-between">
+              <p>March 16</p>
+              <p>+1250</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Rent Income</p>
+              <p>+500</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Mobile Topup</p>
+              <p>+700</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Client Payment</p>
+              <p>+1450</p>
+            </div>
+        </div>
+        <div class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4">
+            <div class="flex justify-between">
+              <p>March16</p>
+              <p>+1250</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Rent Income</p>
+              <p>+500</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Mobile Topup</p>
+              <p>+700</p>
+            </div>
+            <div class="flex justify-between border-b border-b-gray pt-5">
+              <p>Client Payment</p>
+              <p>+1450</p>
+            </div>
+        </div>
+    </div>
+    <main class="hidden lg:flex lg:w-screen lg:h-screen  lg:gap-4 lg:flex-row  lg:overflow-hidden lg:overflow-y-scroll">
+        <!--sidebar-->
+        <div class="flex w-64 h-screen  flex-col mt-2  mr-8 justify-between">
+          <div class="h-2/4 flex flex-col items-center gap-6">
+            <p class="text-4xl ml-2 font-bold font-serif text-blue">
+             Distributa
+            </p>
+            <div class=" flex flex-col gap-4 w-full">
+              <a class="flex  bg-grey  rounded-lg border align-middle w-56 h-11 pl-9  " href="myinvoice.html">
+                <img class="w-fit h-fit pt-2" src="./img/file-text 1.png"alt="file">
+                <p class="ml-5 pt-2 font-sans text-lg">My Invoices</p>
+              </a>
+              <a href="./New_Invoice.html" class="flex align-middle w-56 h-11 pl-9 cursor-pointer">
+               <img class="w-fit h-fit pt-2" src="./img/plus-square.png"alt="plus">
+               <p class="ml-5 pt-2 font-sans text-lg">New Invoice</p>
+              </a>
+              <a  class="flex align-middle w-56 h-11 pl-9 cursor-pointer" href="mytransactions.html">
+                <img class="w-fit h-fit pt-2" src="./img/book.png"alt="book">
+                <p class="ml-5 pt-2 font-sans text-lg">My Transactions</p> 
+              </a>
+            </div>
+          </div>
+          <div class="hidden lg:flex lg:p-4">
+            <p>Log Out <br> Settings</p>
+          </div>
+          
+        </div> 
+        <!--end of sidebar-->
+        <section class="h-full flex flex-col px-4 gap-3 md:w-full border border-red-600">
+          <p class="text-4xl font-semibold">My Expenses/Income</p>
+           <div class=" w-full flex justify-between">
+              <div class="w-1/3 flex gap-2">
+                 <div class="w-full h-32 flex flex-col justify-center px-4  bg-grey rounded-lg ">
+                      <p class="font-semibold text-3xl">5,000 ugx</p>
+                      <p class="text-sm">Income this month</p>
+                 </div>
+                 <div class="w-full bg-grey rounded-lg h-32 flex flex-col justify-center px-4">
+                     <p class="font-semibold text-3xl">5,000 ugx</p>
+                     <p class="text-sm">Expenses this month</p>
+                 </div>
+              </div> 
+              <a class="" href="">
+                 <button class="bg-blue text-white gap-2 w-20 h-6 text-sm flex justify-center items-center ml-2 p-2 md:w-24 md:h-8 md:text-lg">Add New</button>
+              </a> 
+           </div>
+         <table class="w-full h-full text-center text-sm  overscroll-y-auto border border-blue">
+               <tr class=" border-b-2 font-normal ">
+                 <th>Date</th>
+                 <th>Item</th>
+                 <th>Payee</th>
+                 <th>Method</th>
+                 <th>Receipt#</th>
+                 <th>Expense/Income</th>
+                 <th>Category</th>
+                 <th>Amount</th>
+               </tr>
+             </thead>
+               <tbody class=" overflow-y-auto">
+                   <tr>
+                     <td>DD/MM/YY</td>
+                     <td class="w-fit flex flex-col justify-start pl-0">
+                       <p>
+                         <span class="font-semibold">Office Funiture</span><br>
+                         Esse Tempor Tempor <br>
+                         Ea Cupidatat Sit Quis <br>
+                         Culp Amin Minim Velit
+                       </p>
+                     </td>
+                     <td>Place holder</td>
+                     <td>Place holder</td>
+                     <td>Place holder</td>
+                     <td>Place holder</td>
+                     <td>Payed</td>
+                     <td>500</td>
+                   </tr>
+                   <tr class="bg-grey">
+                    <td>DD/MM/YY</td>
+                    <td class="w-fit flex flex-col justify-start pl-0">
+                      <p>
+                        <span class="font-semibold">Office Funiture</span><br>
+                        Esse Tempor Tempor <br>
+                        Ea Cupidatat Sit Quis <br>
+                        Culp Amin Minim Velit
+                      </p>
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr><tr>
+                    <td>DD/MM/YY</td>
+                    <td class="w-fit flex flex-col justify-start pl-0">
+                      <p>
+                        <span class="font-semibold">Office Funiture</span><br>
+                        Esse Tempor Tempor <br>
+                        Ea Cupidatat Sit Quis <br>
+                        Culp Amin Minim Velit
+                      </p>
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr class="bg-grey">
+                    <td>DD/MM/YY</td>
+                    <td class="w-fit flex flex-col justify-start pl-0">
+                      <p>
+                        <span class="font-semibold">Office Funiture</span><br>
+                        Esse Tempor Tempor <br>
+                        Ea Cupidatat Sit Quis <br>
+                        Culp Amin Minim Velit
+                      </p>
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>DD/MM/YY</td>
+                    <td class="w-fit flex flex-col justify-start pl-0">
+                      <p>
+                        <span class="font-semibold">Office Funiture</span><br>
+                        Esse Tempor Tempor <br>
+                        Ea Cupidatat Sit Quis <br>
+                        Culp Amin Minim Velit
+                      </p>
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr class="bg-grey">
+                    <td>DD/MM/YY</td>
+                    <td class="w-fit flex flex-col justify-start pl-0">
+                      <p>
+                        <span class="font-semibold">Office Funiture</span><br>
+                        Esse Tempor Tempor <br>
+                        Ea Cupidatat Sit Quis <br>
+                        Culp Amin Minim Velit
+                      </p>
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+               </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>
