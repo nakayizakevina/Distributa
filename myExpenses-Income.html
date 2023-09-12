@@ -7,7 +7,7 @@
     <link href="./output.css" rel="stylesheet"/>
 </head>
 <body>
-    <div class="w-full h-full lg:hidden">
+  <div class="w-full h-full lg:hidden">
         <div class="bg-grey rounded-lg w-full h-fit py-5 flex flex-col justify-evenly px-4">
             <div class="flex justify-between">
               <p>March16</p>
@@ -80,8 +80,8 @@
               <p>+1450</p>
             </div>
         </div>
-    </div>
-    <main class="hidden lg:flex lg:w-screen lg:h-screen lg:overflow-y-hidden lg:gap-4 lg:flex-row">
+  </div>
+  <main class="hidden lg:flex lg:w-screen lg:h-screen lg:overflow-y-hidden lg:gap-4 lg:flex-row">
         <!--sidebar-->
         <div class="flex w-64 h-screen  flex-col mt-2  mr-8 justify-between">
           <div class="h-2/4 flex flex-col items-center gap-6">
@@ -89,7 +89,7 @@
              Distributa
             </p>
             <div class=" flex flex-col gap-4 w-full">
-              <a class="flex items-center px-2 w-fit h-11 pl-9 bg-grey border-b-gray rounded-lg md:w-45 md:align-middle md:flex cursor-pointer"  href="myExpenses-Income.html">
+              <a class="flex items-center px-2 w-fit h-11 pl-9 bg-grey border-b-gray rounded-lg lg:w-45 lg:align-middle lg:flex cursor-pointer"  href="myExpenses-Income.html">
                 <img class="w-6 h-6 mt-3" src="./img/expense.png.png" alt="" />
                 <p class="ml-3 pt-2 font-sans text-lg">My Expenses</p>
               </a>
@@ -130,7 +130,7 @@
                  <button class="bg-blue text-white gap-2 w-20 h-6 text-sm flex justify-center items-center ml-2 p-2 md:w-24 md:h-8 md:text-lg">Add New</button>
               </a> 
            </div>
-           <div class="lg:w-full lg:h-4/6 lg:overflow-y-scroll">
+           <div class="lg:w-full lg:h-full lg:overflow-y-scroll lg:flex lg:gap-4">
               <table class="w-full h-full text-center text-sm">
               <tr class=" border-b-2 font-normal ">
                 <th>Date</th>
@@ -143,16 +143,14 @@
                 <th>Amount</th>
               </tr>
              </thead>
-              <tbody class="">
-                  <tr>
+              <tbody>
+                  <tr class="py-4">
                     <td>DD/MM/YY</td>
-                    <td class="w-fit flex flex-col justify-start pl-0">
-                      <p>
-                        <span class="font-semibold">Office Funiture</span><br>
-                        Esse Tempor Tempor <br>
-                        Ea Cupidatat Sit Quis <br>
-                        Culp Amin Minim Velit
-                      </p>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
                     </td>
                     <td>Place holder</td>
                     <td>Place holder</td>
@@ -162,94 +160,88 @@
                     <td>500</td>
                   </tr>
                   <tr class="bg-grey">
-                   <td>DD/MM/YY</td>
-                   <td class="w-fit flex flex-col justify-start pl-0">
-                     <p>
-                       <span class="font-semibold">Office Funiture</span><br>
-                       Esse Tempor Tempor <br>
-                       Ea Cupidatat Sit Quis <br>
-                       Culp Amin Minim Velit
-                     </p>
-                   </td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Payed</td>
-                   <td>500</td>
-                 </tr><tr>
-                   <td>DD/MM/YY</td>
-                   <td class="w-fit flex flex-col justify-start pl-0">
-                     <p>
-                       <span class="font-semibold">Office Funiture</span><br>
-                       Esse Tempor Tempor <br>
-                       Ea Cupidatat Sit Quis <br>
-                       Culp Amin Minim Velit
-                     </p>
-                   </td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Payed</td>
-                   <td>500</td>
-                 </tr>
-                 <tr class="bg-grey">
-                   <td>DD/MM/YY</td>
-                   <td class="w-fit flex flex-col justify-start pl-0">
-                     <p>
-                       <span class="font-semibold">Office Funiture</span><br>
-                       Esse Tempor Tempor <br>
-                       Ea Cupidatat Sit Quis <br>
-                       Culp Amin Minim Velit
-                     </p>
-                   </td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Payed</td>
-                   <td>500</td>
-                 </tr>
-                 <tr>
-                   <td>DD/MM/YY</td>
-                   <td class="w-fit flex flex-col justify-start pl-0">
-                     <p>
-                       <span class="font-semibold">Office Funiture</span><br>
-                       Esse Tempor Tempor <br>
-                       Ea Cupidatat Sit Quis <br>
-                       Culp Amin Minim Velit
-                     </p>
-                   </td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Payed</td>
-                   <td>500</td>
-                 </tr>
-                 <tr class="bg-grey">
-                   <td>DD/MM/YY</td>
-                   <td class="w-fit flex flex-col justify-start pl-0">
-                     <p>
-                       <span class="font-semibold">Office Funiture</span><br>
-                       Esse Tempor Tempor <br>
-                       Ea Cupidatat Sit Quis <br>
-                       Culp Amin Minim Velit
-                     </p>
-                   </td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Place holder</td>
-                   <td>Payed</td>
-                   <td>500</td>
-                 </tr>
+                    <td>DD/MM/YY</td>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td >DD/MM/YY</td>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td >Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr class="bg-grey">
+                    <td>DD/MM/YY</td>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr>
+                    <td>DD/MM/YY</td>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                  <tr class="bg-grey">
+                    <td>DD/MM/YY</td>
+                    <td class="text-start">
+                     <span class="block font-semibold">Office Funiture</span> 
+                     Esse Tempor Tempor <br/>
+                     Ea Cupidatat Sit Quis <br/> 
+                     Culp Amin Minim Velit
+                    </td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Place holder</td>
+                    <td>Payed</td>
+                    <td>500</td>
+                  </tr>
+                 
+                
               </tbody>
               </table>  
            </div>
           
         </section>
-    </main>
+  </main>
+ 
 </body>
 </html>
