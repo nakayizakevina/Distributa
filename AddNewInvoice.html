@@ -6,9 +6,9 @@
     <title>Add New</title>
     <link href="./output.css" rel="stylesheet" />
   </head>
-  <body class="w-full h-screen flex flex-col justify-center">
-    <section class="w-full  px-3 flex flex-col gap-4">
-      <div class="w-full h-11 px-2 bg-grey flex justify-between items-center">
+  <body class="w-full h-screen flex flex-col justify-center lg:flex lg:items-center">
+    <section class="w-full   flex flex-col gap-4 bg-grey lg:w-[450px]">
+      <div class="w-full h-11 px-2  bg-gray flex justify-between items-center">
            <p class="text-lg">Add New Transactions</p>
            <svg
           class="w-8 h-8"
@@ -26,65 +26,68 @@
           />
            </svg>
       </div>
-      <div class="w-full flex gap-3">
-        <button class="w-1/2 h-12 font-bold bg-grey">Expenses</button>
-        <button class="w-1/2 h-12 font-bold bg-grey">Income</button>
-      </div>
-      <div class="w-full flex gap-3">
-          <div class="w-full flex  flex-col" >
-            <label>Date</label>
-            <input class="w-full h-12 border border-gray pl-2" type="date">
+      <div class="w-[300px] flex flex-col justify-center   bg-yellow-400">
+        <div class="w-full flex gap-3">
+            <button class="w-1/2 h-12 font-bold bg-gray">Expenses</button>
+            <button class="w-1/2 h-12 font-bold bg-gray">Income</button>
           </div>
-          <div class="w-full flex flex-col">
-             <label>Item</label>
-             <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Items">
+          <div class="w-full flex gap-3">
+              <div class="w-full flex  flex-col" >
+                <label>Date</label>
+                <input class="w-full h-12 border border-gray pl-2" type="date">
+              </div>
+              <div class="w-full flex flex-col">
+                 <label>Item</label>
+                 <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Items">
+              </div>
           </div>
+          <div class="w-full flex flex-col gap-4">
+             <div class="w-full flex flex-col">
+                 <label>Amount</label>
+                 <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Payee">
+             </div>
+             <div class="w-full flex flex-col">
+                 <label>Description</label>
+                 <input class="w-full h-24 border border-gray pl-2" type="text" placeholder="Description">
+             </div>
+          </div> 
+          <div class="w-full flex flex-col gap-2">
+            <div class="w-full flex flex-row gap-4">
+                <div class="w-full flex flex-col">
+                    <label>Payee</label>
+                    <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Payee">
+                </div>
+                <div class="w-full flex flex-col">
+                    <label>Receipt/Voucher</label>
+                    <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="00007">
+                </div>
+             </div> 
+             <div class="w-full flex flex-row gap-4">
+                <div class="w-full flex flex-col">
+                    <label>Payment Method</label>
+                    <select
+                    name="payment"
+                   id="payment"
+                   class="p-2 w-full h-12  text-sm border border-gray bg-white">
+                   <option value="">Payee</option>
+                  </select>
+                    
+                </div>
+                <div class="w-full flex flex-col"> 
+                    <label>Category</label>
+                    <select
+                      name="Category"
+                     id="Category"
+                     class="p-2 w-full h-12  text-sm border border-gray bg-white">
+                     <option value="">Select one</option>
+                    </select>
+                    
+                </div>
+             </div> 
+             <button class="w-full h-12 mb-3 text-white font-bold bg-blue">Add</button>
+           </div>
       </div>
-      <div class="w-full flex flex-col gap-4">
-         <div class="w-full flex flex-col">
-             <label>Amount</label>
-             <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Payee">
-         </div>
-         <div class="w-full flex flex-col">
-             <label>Description</label>
-             <input class="w-full h-24 border border-gray pl-2" type="text" placeholder="Description">
-         </div>
-      </div> 
-      <div class="w-full flex flex-col gap-2">
-        <div class="w-full flex flex-row gap-4">
-            <div class="w-full flex flex-col">
-                <label>Payee</label>
-                <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="Payee">
-            </div>
-            <div class="w-full flex flex-col">
-                <label>Receipt/Voucher</label>
-                <input class="w-full h-12 border border-gray pl-2" type="text" placeholder="00007">
-            </div>
-         </div> 
-         <div class="w-full flex flex-row gap-4">
-            <div class="w-full flex flex-col">
-                <label>Payment Method</label>
-                <select
-                name="Category"
-               id="Category"
-               class="p-2 w-full h-12  text-sm border border-gray bg-white">
-               <option value="">Payee</option>
-              </select>
-                
-            </div>
-            <div class="w-full flex flex-col"> 
-                <label>Category</label>
-                <select
-                  name="Category"
-                 id="Category"
-                 class="p-2 w-full h-12  text-sm border border-gray bg-white">
-                 <option value="">Select one</option>
-                </select>
-                
-            </div>
-         </div> 
-         <button class="w-full h-12 text-white font-bold bg-blue">Add</button>
-       </div>
+
     </section>
   </body>
 </html>
