@@ -23,7 +23,30 @@
               >
                 Distributa
               </h2>
-              <img class="md:hidden p-2" src="./img/Icon.png" alt="icon" />
+              <img id="menu" class="md:hidden p-2" src="./img/Icon.png" alt="icon" />
+              <div id="icons" class="flex-col hidden text-start absolute top-16 right-4 z-50 bg-grey shadow-lg lg:hidden ">
+                <a class="flex items-center px-2 w-fit h-11 md:w-45 md:align-middle md:flex cursor-pointer"  href="myExpenses-Income.html">
+                  <img class="w-6 h-6 mt-3" src="./img/expense.png.png" alt="" />
+                  <p class="ml-3 pt-2 font-sans text-lg">My Expenses</p>
+                </a>
+                <a class="flex items-center px-2 w-fit h-11 md:w-45 md:align-middle md:flex cursor-pointer"  href="myinvoice.html">
+                  <img class="w-6 h-6 mt-3" src="./img/file-text 1.png" alt="" />
+                  <p class="ml-3 pt-2 font-sans text-lg">My Invoice</p>
+                </a>
+                <a class="flex items-center w-fit h-11 px-2 md:w-45 md:align-middle md:flex cursor-pointer bg-grey border border-gray rounded-lg"   href="New_Invoice.html">
+                  <img class="w-6 h-6 mt-3" src="./img/plus-square.png" alt="" />
+                  <p class="ml-3 pt-2 font-sans text-lg">New Invoice</p>
+                </a>
+                <a class="flex items-center w-fit h-11 te md:w-45 md:align-middle md:flex px-2 cursor-pointer" href="mytransactions.html">
+                  <img class="w-fit h-fit pt-2" src="./img/book.png" alt="file" />
+                  <p class="ml-3 pt-2 font-sans text-lg">My Transactions</p>
+                </a>
+                <div class="p-2 ">
+                  Logout <br />
+                  settings
+                </div>
+              </div>
+              
             </div>
             <div class="flex-col text-start hidden md:flex md:gap-4">
               <a class="flex items-center px-2 w-fit h-11 md:w-45 md:align-middle md:flex cursor-pointer"  href="myExpenses-Income.html">
@@ -57,6 +80,8 @@
         <h1 class="mt-4  text-2xl font-semibold md:text-4xl pl-9">New Invoice</h1>
         <div class="flex w-full py-5 px-10 flex-col">
           <section  class="flex justify-between w-full  items-end relative h-fit gap-6 mb-8" >
+           
+            
             <div
               class="absolute bg-grey h-full md:h-2/3 rounded -z-30 w-full"
             ></div>
@@ -74,7 +99,7 @@
                     logo
                   </span>
                 </label>
-                <div class="md:flex md:gap-3">
+                <div class="md:flex md:gap-3 ">
                   <div class="flex flex-col">
                     <label for="paper-size">Paper size</label>
                     <select
@@ -379,5 +404,14 @@
 
       <!--****-->
     </main>
+    <script>
+      const Menu=document.getElementById("menu");
+      const items=document.getElementById("icons");
+      Menu.addEventListener("click",function(){
+        items.classList.toggle("hidden");
+      }
+        
+      );
+    </script>
   </body>
 </html>
